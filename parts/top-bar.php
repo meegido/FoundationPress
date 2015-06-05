@@ -12,7 +12,7 @@
     <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
             <li class="name">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/img/cicero-logo.jpg"/>
+                <a href = "<?php echo get_bloginfo('wpurl') ?>"><img src="<?php echo get_bloginfo('template_url') ?>/assets/img/cicero-logo.jpg"/></a>
             </li>
         </ul>
         <section class="top-bar-section">
