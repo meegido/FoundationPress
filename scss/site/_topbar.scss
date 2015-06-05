@@ -38,7 +38,7 @@
 }
 // A more subtle background color for the active menu item
 .top-bar-section li.active:not(.has-form) a:not(.button)  {
-	background: $white;
+	background: $black;
 }
 .top-bar-section {
 	li.active:not(.has-form) {
@@ -52,7 +52,6 @@
 
 .tab-bar {
 	margin-bottom: rem-calc(10);
-	
 	.menu-icon {
 		background-color: $black;
 	}
