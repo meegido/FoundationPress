@@ -6,6 +6,7 @@
 
 .top-bar {
 	background-color: $white;
+	display: inline-block;
 	.name {
 		background-color: $white;
 
@@ -19,6 +20,9 @@
 }
 
 .top-bar-section {
+	margin-top: rem-calc(129);
+	margin-left: 23em;
+	width: 100%;
 	ul {
 		li{
 			background: $white;
@@ -46,6 +50,13 @@
 	}
 }
 
+.tab-bar {
+	margin-bottom: rem-calc(10);
+	
+	.menu-icon {
+		background-color: $black;
+	}
+}
 
 
 
