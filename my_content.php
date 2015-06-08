@@ -11,13 +11,15 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>"  >
+<article id="post-<?php the_ID(); ?>"  class="large-4 columns" >
 	<header>
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	</header>
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading...', 'foundationpress' ) ); ?>
+		<?php the_excerpt( __( 'Continue reading...', 'foundationpress' ) ); ?>
 		<span>Precio: <?php show_price(get_the_ID()); ?></span>
+		<br>
+		<span><?php the_taxonomies(); ?></span>
 	</div>
 	<footer>
 		<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
