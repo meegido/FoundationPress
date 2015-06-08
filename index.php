@@ -14,21 +14,31 @@
  * @since FoundationPress 1.0
  */
 
-get_header(); ?>
+get_header(); 
+
+	$args = array(
+	      'post_type' => 'stage'
+	    );
+
+
+	$stages = new WP_Query( $args );
+?>
 
 <div class="row">
 	<div class="small-12 large-12 columns" role="main">
 
-	<?php if ( have_posts() ) : ?>
+
+
+	<?php if( $stages->have_posts() ) : ?>
 
 		<?php do_action( 'foundationpress_before_content' ); ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php while ( $stages->have_posts() ) : $stages->the_post(); ?>
 			<?php get_template_part( 'my_content', get_post_format() ); ?>
 		<?php endwhile; ?>
 
 		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
+			<?php get_template_part( 'my_content', 'stage' ); ?>
 
 		<?php do_action( 'foundationpress_before_pagination' ); ?>
 
