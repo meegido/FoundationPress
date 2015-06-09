@@ -16,10 +16,18 @@
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	</header>
 	<div class="entry-content">
+		<span><?php the_taxonomies(); ?></span>
+		<?php if ( has_post_thumbnail() ) : ?>
+			<div class="row">
+				<div class="column">
+					<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
+				</div>
+			</div>
+		<?php endif; ?>
 		<?php the_excerpt( __( 'Continue reading...', 'foundationpress' ) ); ?>
-		<span>Día: <?php show_date(get_the_ID()); ?></span>
+		<span><?php show_date(get_the_ID()); ?></span>
 		<br>
-		<span>Hora: <?php show_hour(get_the_ID()); ?></span>
+		<span><?php show_hour(get_the_ID()); ?></span>
 		<br>
 		<span>Punto de encuentro: <?php show_meeting(get_the_ID()); ?></span>
 		<br>
@@ -27,7 +35,7 @@
 		<br>
 		<span>Precio: <?php show_price(get_the_ID()); ?></span>
 		<br>
-		<span><?php the_taxonomies(); ?></span>
+		
 	</div>
 	<footer>
 		<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
