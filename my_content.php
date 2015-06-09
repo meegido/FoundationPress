@@ -11,13 +11,11 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>"  class="large-4 columns" >
+<article id="post-<?php the_ID(); ?>"  class="large-4 columns full-card" >
 	<header>
 		<?php if ( has_post_thumbnail() ) : ?>
 			<div class="row">
-				<div class="column">
-					<?php the_post_thumbnail( '', array('class' => 'border-img-card') ); ?>
-				</div>
+				<?php the_post_thumbnail( '', array('class' => 'border-img-card') ); ?>
 			</div>
 		<?php endif; ?>
 		<span><?php the_taxonomies(); ?></span>
@@ -34,5 +32,5 @@
 	<footer>
 		<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
 	</footer>
-	<hr />
 </article>
+	
