@@ -17,6 +17,14 @@
 	</header>
 	<div class="entry-content">
 		<?php the_excerpt( __( 'Continue reading...', 'foundationpress' ) ); ?>
+		<span>Día: <?php show_date(get_the_ID()); ?></span>
+		<br>
+		<span>Hora: <?php show_hour(get_the_ID()); ?></span>
+		<br>
+		<span>Punto de encuentro: <?php show_meeting(get_the_ID()); ?></span>
+		<br>
+		<span>Máximo numero de personas: <?php show_maxpeople(get_the_ID()); ?></span>
+		<br>
 		<span>Precio: <?php show_price(get_the_ID()); ?></span>
 		<br>
 		<span><?php the_taxonomies(); ?></span>

@@ -56,10 +56,31 @@ function stage() {
 
 add_action('init', 'stage');
 
-function show_price($stage_id) {
-	echo get_post_meta( $stage_id, 'stage_price', true );
+function show_date($stage_id) {
+  echo get_post_meta( $stage_id, 'stage_date', true );
 }
 
+function show_hour($stage_id) {
+  echo get_post_meta( $stage_id, 'stage_hour', true );
+}
+
+function show_meeting($stage_id) {
+  echo get_post_meta( $stage_id, 'stage_meeting', true );
+}
+
+function show_maxpeople($stage_id) {
+  echo get_post_meta( $stage_id, 'stage_maxpeople', true );
+}
+
+function show_price($stage_id) {
+  echo get_post_meta( $stage_id, 'stage_price', true );
+}
+
+require_once('stage-date.php');
+require_once('stage-hour.php');
+require_once('stage-meeting.php');
+require_once('stage-maxpeople.php');
 require_once('stage-price.php');
+
 
 ?>
