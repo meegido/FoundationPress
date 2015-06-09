@@ -11,7 +11,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>"  class="large-4 columns full-card" >
+<article id="post-<?php the_ID(); ?>"  class="small-2 large-4 columns block-grid full-card" >
 	<header>
 		<?php if ( has_post_thumbnail() ) : ?>
 			<div class="row">

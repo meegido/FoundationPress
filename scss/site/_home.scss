@@ -20,5 +20,26 @@
 		$per-row:true,
   	$spacing:$block-grid-default-spacing,
   	$include-spacing:true,
-  	$base-style:false)
+  	$base-style:false);
+
+	@media #{$small-up} {
+
+	}
+
+	@media #{$medium-up} {
+		@include block-grid-html-classes($size:medium, $include-spacing:false);
+	}
+
+	@media #{$large-up} {
+		@include block-grid-html-classes($size:large, $include-spacing:false);
+	}
+
+
+	@media #{$xlarge-up} {
+		@include block-grid-html-classes($size:xlarge, $include-spacing:false);
+	}
+
+
+	@media #{$xxlarge-up} { }
+
 }
