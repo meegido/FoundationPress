@@ -13,10 +13,6 @@
 
 <article id="post-<?php the_ID(); ?>"  class="large-4 columns" >
 	<header>
-		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-	</header>
-	<div class="entry-content">
-		<span><?php the_taxonomies(); ?></span>
 		<?php if ( has_post_thumbnail() ) : ?>
 			<div class="row">
 				<div class="column">
@@ -24,16 +20,14 @@
 				</div>
 			</div>
 		<?php endif; ?>
+		<span><?php the_taxonomies(); ?></span>
+		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+	</header>
+	<div class="entry-content">
 		<?php the_excerpt( __( 'Continue reading...', 'foundationpress' ) ); ?>
 		<span><?php show_date(get_the_ID()); ?></span>
 		<br>
-		<span><?php show_hour(get_the_ID()); ?></span>
-		<br>
-		<span>Punto de encuentro: <?php show_meeting(get_the_ID()); ?></span>
-		<br>
-		<span>Máximo numero de personas: <?php show_maxpeople(get_the_ID()); ?></span>
-		<br>
-		<span>Precio: <?php show_price(get_the_ID()); ?></span>
+		<span><?php show_price(get_the_ID()); ?></span>
 		<br>
 		
 	</div>
