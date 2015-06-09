@@ -22,8 +22,11 @@
   	$include-spacing:true,
   	$base-style:false);
 
-	@media #{$small-up} {
-
+	@mixin block-grid-html-classes($size, $include-spacing){
+		@media #{$small-up} {
+		@include block-grid-html-classes(
+			$size: small,
+			$include-spacing:true)
 	}
 
 	@media #{$medium-up} {
@@ -43,3 +46,6 @@
 	@media #{$xxlarge-up} { }
 
 }
+	}
+
+	
