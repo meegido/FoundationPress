@@ -28,6 +28,7 @@
 	margin: 0 0.375rem;
 	width: 31%;
 	margin-bottom: 0.375rem;
+	min-height: 33em;
 	@include block-grid (
 		$per-row: true,
   	$spacing: $block-grid-default-spacing,

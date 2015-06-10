@@ -35,7 +35,13 @@ get_header(); ?>
 			</div>
 			<footer>
 				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-				<p><?php the_tags(); ?></p>
+				<span>
+					<?php $tags = get_the_tags(); 
+					foreach ($tags as $tag) {
+						echo '<a href="#">'. $tag->name .'</a>';
+						}
+					 ?>
+				</span>
 			</footer>
 			<?php do_action( 'foundationpress_post_before_comments' ); ?>
 			<?php comments_template(); ?>

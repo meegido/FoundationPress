@@ -10,7 +10,6 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>"  class="small-2 large-4 columns block-grid full-card" >
 	<header>
 		<?php if ( has_post_thumbnail() ) : ?>
@@ -42,4 +41,3 @@
 		
 	</footer>
 </article>
-	
