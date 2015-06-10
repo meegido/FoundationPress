@@ -19,8 +19,13 @@
 	}
 }
 
+.logo {
+	margin-left: 6em;
+	margin-top: 1em;
+}
+
 .top-bar-section {
-	margin-top: rem-calc(80);
+	margin-top: rem-calc(100);
 	margin-left: 23em;
 	width: 100%;
 	ul {
@@ -56,6 +61,7 @@
 		background-color: $black;
 	}
 }
+
 
 
 

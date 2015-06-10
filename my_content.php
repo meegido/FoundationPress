@@ -18,7 +18,10 @@
 				<?php the_post_thumbnail( '', array('class' => 'border-img-card') ); ?>
 			</div>
 		<?php endif; ?>
-		<span><?php the_taxonomies(); ?></span>
+		<span>
+			<ul><?php $terms = get_the_term_list( get_the_ID(), 'routes', '<li class="route_item">', '', '</li>' ) ?></ul>
+			<?php echo $terms ?>
+		</span>
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	</header>
 	<div class="entry-content">
