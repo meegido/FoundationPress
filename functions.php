@@ -45,6 +45,24 @@ require_once( 'library/theme-support.php' );
 /** Add Header image */
 require_once( 'library/custom-header.php' );
 
-require_once( 'library/stage.php' );
+function show_date($stage_id) {
+  echo get_post_meta( $stage_id, 'stage_date', true );
+}
+
+function show_hour($stage_id) {
+  echo get_post_meta( $stage_id, 'stage_hour', true );
+}
+
+function show_meeting($stage_id) {
+  echo get_post_meta( $stage_id, 'stage_meeting', true );
+}
+
+function show_maxpeople($stage_id) {
+  echo get_post_meta( $stage_id, 'stage_maxpeople', true );
+}
+
+function show_price($stage_id) {
+  echo get_post_meta( $stage_id, 'stage_price', true );
+}
 
 ?>
