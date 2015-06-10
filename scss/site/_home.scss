@@ -8,14 +8,17 @@
 }
 
 .card-title {
+	font-size: 2em;
 	a {
 		color: $tuatara;
 	}
-	
 }
 
 .excerpt-content {
 	color: $tuatara;
+	p {
+		font-size: .9rem;
+	}
 }
 
 .full-card {

@@ -18,6 +18,7 @@
 				<?php the_post_thumbnail( '', array('class' => 'border-img-card') ); ?>
 			</div>
 		<?php endif; ?>
+		<h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		<span>
 			<?php $tags = get_the_tags(); 
 				foreach ($tags as $tag) {
@@ -25,7 +26,6 @@
 				}
 			 ?>
 		</span>
-		<h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	</header>
 	<div class="entry-content">
 		<section class="excerpt-content">
@@ -33,7 +33,6 @@
 		</section>
 		<section>
 			<p><?php show_date(get_the_ID()); ?></p>
-			<br>
 			<p><?php show_price(get_the_ID()); ?></p>
 			<br>
 		</section>
