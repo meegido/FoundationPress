@@ -5,8 +5,17 @@
   max-width: 100%;
   width: 100%;
   transition: all 200ms ease-out;
-  
+}
 
+.card-title {
+	a {
+		color: $tuatara;
+	}
+	
+}
+
+.excerpt-content {
+	color: $tuatara;
 }
 
 .full-card {

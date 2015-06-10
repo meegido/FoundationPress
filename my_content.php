@@ -19,21 +19,28 @@
 			</div>
 		<?php endif; ?>
 		<span>
-			<ul><?php $terms = get_the_term_list( get_the_ID(), 'routes', '<li class="route_item">', '', '</li>' ) ?></ul>
-			<?php echo $terms ?>
+			<?php $tags = get_the_tags(); 
+				foreach ($tags as $tag) {
+					echo '<a href="#">'. $tag->name .'</a>';
+				}
+			 ?>
 		</span>
-		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+		<h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	</header>
 	<div class="entry-content">
-		<?php the_excerpt( __( 'Continue reading...', 'foundationpress' ) ); ?>
-		<span><?php show_date(get_the_ID()); ?></span>
-		<br>
-		<span><?php show_price(get_the_ID()); ?></span>
-		<br>
+		<section class="excerpt-content">
+			<?php the_excerpt( __( 'Continue reading...', 'foundationpress' ) ); ?>
+		</section>
+		<section>
+			<p><?php show_date(get_the_ID()); ?></p>
+			<br>
+			<p><?php show_price(get_the_ID()); ?></p>
+			<br>
+		</section>
 		
 	</div>
 	<footer>
-		<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
+		
 	</footer>
 </article>
 	
