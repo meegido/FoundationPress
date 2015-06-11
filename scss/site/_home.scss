@@ -1,10 +1,37 @@
-.border-img-card {
-	border: none;
-  display: inline-block;
-  line-height: 0;
-  max-width: 100%;
-  width: 100%;
-  transition: all 200ms ease-out;
+.grid-row {
+	$behavior: nest;
+			@include grid-column (3);
+
+			@include block-grid (
+			$per-row: true,
+	  	$spacing: $block-grid-default-spacing,
+	  	$include-spacing: true,
+	  	$base-style: false);
+
+		@mixin block-grid-html-classes($size, $include-spacing){
+			@media #{$small-up} {
+			@include block-grid-html-classes(
+				$size: small,
+				$include-spacing:true)
+		}
+
+		@media #{$medium-up} {
+			@include block-grid-html-classes($size:medium, $include-spacing:false);
+		}
+
+		@media #{$large-up} {
+			@include block-grid-html-classes($size:large, $include-spacing:false);
+		}
+
+
+		@media #{$xlarge-up} {
+			@include block-grid-html-classes($size:xlarge, $include-spacing:false);
+		}
+
+
+		@media #{$xxlarge-up} { }
+
+	}
 }
 
 .card-title {
@@ -26,39 +53,8 @@
 	border-radius: 2px;
 	border: 1px solid #eee;
 	margin: 0 0.375rem;
-	width: 31%;
 	margin-bottom: 0.375rem;
 	min-height: 33em;
-	@include block-grid (
-		$per-row: true,
-  	$spacing: $block-grid-default-spacing,
-  	$include-spacing: true,
-  	$base-style: false);
-
-	@mixin block-grid-html-classes($size, $include-spacing){
-		@media #{$small-up} {
-		@include block-grid-html-classes(
-			$size: small,
-			$include-spacing:true)
-	}
-
-	@media #{$medium-up} {
-		@include block-grid-html-classes($size:medium, $include-spacing:false);
-	}
-
-	@media #{$large-up} {
-		@include block-grid-html-classes($size:large, $include-spacing:false);
-	}
-
-
-	@media #{$xlarge-up} {
-		@include block-grid-html-classes($size:xlarge, $include-spacing:false);
-	}
-
-
-	@media #{$xxlarge-up} { }
-
 }
-	}
 
 	

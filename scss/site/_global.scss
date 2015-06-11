@@ -9,6 +9,10 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
+.row {
+	max-width: 71.5rem;
+}
+
 // Reset margin and padding on figure element
 figure { 
 	margin: 0; 
