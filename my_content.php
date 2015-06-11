@@ -11,7 +11,7 @@
 
 ?>
 
-<div id="last-block" class="grid-row small-2 large-4 columns clearfix">
+<div class="grid-row small-2 large-4 columns">
 	<article id="post-<?php the_ID(); ?>"  class="full-card" >
 		<header>
 			<?php if ( has_post_thumbnail() ) : ?>
