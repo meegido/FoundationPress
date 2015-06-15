@@ -14,11 +14,13 @@
 <div class="grid-row small-2 large-4 columns">
 	<article id="post-<?php the_ID(); ?>"  class="full-card" >
 		<header>
+
 			<?php if ( has_post_thumbnail() ) : ?>
 				<div class="row">
 					<?php the_post_thumbnail( '', array('class' => 'border-img-card') ); ?>
 				</div>
 			<?php endif; ?>
+
 			<h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			<span class="tag-label">
 				<?php $tags = get_the_tags(); 
@@ -34,7 +36,6 @@
 			</section>
 			<section>
 				<p><?php show_date(get_the_ID()); ?></p>
-				<p><?php show_price(get_the_ID()); ?></p>
 				<br>
 			</section>
 		</div>
