@@ -33,15 +33,19 @@
 	}
 }
 
-.tag-label {
-	font-style: italic;
-}
-
 .grid-row {
 	&:last-child {
 	float: left !important;
 	overflow: auto;
 	}
+}
+
+.tag-label {
+	font-style: italic;
+}
+
+.border-img-card {
+	border-radius: 13px;
 }
 
 .card-title {
@@ -61,7 +65,7 @@
 
 .full-card {
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-	border-radius: 2px;
+	border-radius: 13px;
 	border: 1px solid #eee;
 	margin: 0 0.375rem;
 	margin-bottom: 0.375rem;
