@@ -48,13 +48,13 @@
 	border-radius: 13px;
 	background-size: cover;
   height: 200px;
-  padding-top: 1px;
 }
 
 .card-title {
 	font-size: 1.5em;
 	text-transform: uppercase;
 	font-family: $body-font-family;
+	padding-left: .5em;
 	a {
 		color: $tuatara;
 	}
@@ -62,6 +62,8 @@
 
 .excerpt-content {
 	color: $tuatara;
+	padding-left: .9em;
+  padding-right: .9em;
 	p {
 		font-size: .8rem;
 	}
@@ -73,7 +75,17 @@
 	border: 1px solid #eee;
 	margin: 0 0.375rem;
 	margin-bottom: 0.375rem;
-	height: 33em;
-	padding-left: .9em;
-  padding-right: .9em;
+	height: 31em;
+	position: relative;
+}
+
+.bottom-card {
+	background-color: red;
+	opacity: 0.5;
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 1em;
+  border-bottom-right-radius: 13px;
+  border-bottom-left-radius: 13px;
 }

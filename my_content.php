@@ -14,7 +14,7 @@
 <div class="grid-row small-2 large-4 columns">
 	<article id="post-<?php the_ID(); ?>"  class="full-card">
 		<?php if ( has_post_thumbnail() ) : ?>
-				<div class="row">
+				<div>
 					<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 					<div class="card-image" style="background-image: url('<?php echo $thumb['0'];?>')">
 
@@ -28,20 +28,19 @@
 			<section class="excerpt-content">
 				<?php the_excerpt( __( 'Continue reading...', 'foundationpress' ) ); ?>
 			</section>
-			<span class="tag-label">
-				<?php $tags = get_the_tags(); 
-					foreach ($tags as $tag) {
-						echo '<a href="#">'. $tag->name .'</a>';
-					}
-				 ?>
-			</span>
-			<section>
-				<p><?php show_date(get_the_ID()); ?></p>
-				<br>
-			</section>
+			<aside class="bottom-card">
+				<span class="tag-label">
+					<?php $tags = get_the_tags(); 
+						foreach ($tags as $tag) {
+							echo '<a href="#">'. $tag->name .'</a>';
+						}
+					 ?>
+				</span>
+				<section >
+					<p><?php show_date(get_the_ID()); ?></p>
+					<br>
+				</section>
+			</aside>
 		</div>
-		<footer>
-
-		</footer>
 	</article>
 </div>
