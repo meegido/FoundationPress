@@ -20,7 +20,7 @@
 				</div>
 			<?php endif; ?>
 			<h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<span>
+			<span class="tag-label">
 				<?php $tags = get_the_tags(); 
 					foreach ($tags as $tag) {
 						echo '<a href="#">'. $tag->name .'</a>';
