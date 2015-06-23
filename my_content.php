@@ -39,7 +39,7 @@
 					</span>
 					<section >
 						<p><?php show_date(get_the_ID()); ?></p>
-						<br>
+					
 					</section>
 				</div>
 			</aside>

@@ -86,14 +86,12 @@
 	background-color: red;
 	opacity: 0.5;
 	position: absolute;
-  bottom: -5px;
+  bottom: -1px;
   width: 100%;
   border-bottom-right-radius: 13px;
   border-bottom-left-radius: 13px;
+  padding-top: 1em;
+  padding-left: 3.8em;
 
 }
 
-.bottom-card-info {
-	padding-left: 3.8em;
-	display: inline-block;
-}
