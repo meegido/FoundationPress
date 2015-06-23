@@ -29,19 +29,18 @@
 				<?php the_excerpt( __( 'Continue reading...', 'foundationpress' ) ); ?>
 			</section>
 			<aside class="bottom-card">
-				<div class="bottom-card-info">
-					<span class="tag-label">
-						<?php $tags = get_the_tags(); 
-							foreach ($tags as $tag) {
-								echo '<a href="#">'. $tag->name .'</a>';
-							}
-						 ?>
-					</span>
-					<section >
-						<p><?php show_date(get_the_ID()); ?></p>
-					
-					</section>
-				</div>
+			
+				<span class="tag-label">
+					<?php $tags = get_the_tags(); 
+						foreach ($tags as $tag) {
+							echo '<a href="#">'. $tag->name .'</a>';
+						}
+					 ?>
+				</span>
+				<section >
+					<p><?php show_date(get_the_ID()); ?></p>
+				</section>
+			
 			</aside>
 		</div>
 	</article>

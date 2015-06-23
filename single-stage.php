@@ -35,7 +35,7 @@ get_header(); ?>
 			<footer>
 				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
 				<span>
-					<?php $tags = get_the_tags(); 
+					<?php $tags = get_the_tags();
 					foreach ($tags as $tag) {
 						echo '<a href="#">'. $tag->name .'</a>';
 						}
