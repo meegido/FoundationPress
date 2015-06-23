@@ -86,9 +86,14 @@
 	background-color: red;
 	opacity: 0.5;
 	position: absolute;
-  bottom: 0;
+  bottom: -5px;
   width: 100%;
-  padding-left: 1em;
   border-bottom-right-radius: 13px;
   border-bottom-left-radius: 13px;
+
+}
+
+.bottom-card-info {
+	padding-left: 3.8em;
+	display: inline-block;
 }
