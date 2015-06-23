@@ -45,7 +45,8 @@
 }
 
 .card-image {
-	border-radius: 13px;
+	border-top-right-radius: 13px;
+  border-top-left-radius: 13px;
 	background-size: cover;
   height: 200px;
 }
