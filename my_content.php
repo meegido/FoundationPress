@@ -28,7 +28,7 @@
 			<section class="excerpt-content">
 				<?php the_excerpt( __( 'Continue reading...', 'foundationpress' ) ); ?>
 			</section>
-			<aside class="bottom-card">
+			<aside class="bottom-card <?php echo get_post_custom_values('stage-district')[0];?>">
 			
 				<span class="tag-label">
 					<?php $tags = get_the_tags(); 
