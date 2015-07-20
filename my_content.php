@@ -33,7 +33,8 @@
 				<span class="tag-label">
 					<?php $tags = get_the_tags(); 
 						foreach ($tags as $tag) {
-							echo '<a href="#">'. $tag->name .'</a>';
+							$permalink = get_post_custom_values('route-link')[0];
+							echo '<a href="'. $permalink .'">'. $tag->name .'</a>';
 						}
 					 ?>
 				</span>
