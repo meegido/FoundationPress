@@ -17,7 +17,7 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<header>
-					
+
 					<?php if ( has_post_thumbnail() ) : ?>
 						<?php
 						$thumb_id = get_post_thumbnail_id();
@@ -27,7 +27,7 @@ get_header(); ?>
 
 					<div class="row">
 						<div class="featured-image" style="background-image: url('<?php echo $thumb_url ?>')" >
-							
+
 						</div>
 					</div>
 					<?php endif; ?>

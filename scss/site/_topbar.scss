@@ -1,6 +1,6 @@
 // Add some whitespace between top bar and content
 .top-bar-container, .tab-bar {
-	margin-bottom: rem-calc(140);
+	margin-bottom: rem-calc(70);
 	background-color: $white-smoke;
 }
 
@@ -22,11 +22,12 @@
 .logo {
 	margin-left: 2.5em;
 	margin-top: 1em;
+	width: 31%;
 }
 
 .top-bar-section {
-	margin-top: rem-calc(100);
-	margin-left: 18.5em;
+
+	margin-left: 7.5em;
 	width: 100%;
 	ul {
 		li{
@@ -60,6 +61,10 @@
 	.menu-icon {
 		background-color: $black;
 	}
+}
+
+.title-area {
+	height: 0.9em;
 }
 
 
