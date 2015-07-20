@@ -27,11 +27,13 @@ get_header();
 <div class="row">
 	<div class="grid-container small-12 large-12 columns" role="main">
 
-
+	
 
 	<?php if( $stages->have_posts() ) : ?>
 
 		<?php do_action( 'foundationpress_before_content' ); ?>
+
+		<?php get_template_part( 'promo', get_post_format() ); ?>
 
 		<?php while ( $stages->have_posts() ) : $stages->the_post(); ?>
 			<?php get_template_part( 'my_content', get_post_format() ); ?>
@@ -56,6 +58,6 @@ get_header();
 	<?php do_action( 'foundationpress_after_content' ); ?>
 
 	</div>
-	<!-- <?php get_sidebar(); ?> -->
+	
 </div>
 <?php get_footer(); ?>
