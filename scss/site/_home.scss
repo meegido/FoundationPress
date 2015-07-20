@@ -27,7 +27,6 @@
 				@include block-grid-html-classes($size:xlarge, $include-spacing:false);
 			}
 
-
 			@media #{$xxlarge-up} { }
 
 	}
@@ -113,18 +112,15 @@
 
 	a {
 		color: white;
-		
 		&:hover {
 			color: #2c3e50;
 		}
-
 		&:active {
 			color: #2c3e50;
 		}
-
 		&:focus	{
 			color: #2c3e50;
 		}
-
+	}
 }
 
