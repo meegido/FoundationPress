@@ -84,8 +84,7 @@
 }
 
 .bottom-card {
-	background-color: red;
-	opacity: 0.5;
+	opacity: 0.9;
 	position: absolute;
   bottom: -1px;
   width: 100%;
@@ -111,6 +110,21 @@
 	&.justicia {
 		background-color: #6E8246;
 	}
+
+	a {
+		color: white;
+		
+		&:hover {
+			color: #2c3e50;
+		}
+
+		&:active {
+			color: #2c3e50;
+		}
+
+		&:focus	{
+			color: #2c3e50;
+		}
 
 }
 
