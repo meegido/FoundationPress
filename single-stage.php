@@ -45,7 +45,7 @@ get_header(); ?>
 
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
-		<div class="small-12 large-12 columns" role="main">
+		
 
 			<?php do_action( 'foundationpress_before_content' ); ?>
 
@@ -77,11 +77,57 @@ get_header(); ?>
 				<?php comments_template(); ?>
 				<?php do_action( 'foundationpress_post_after_comments' ); ?>
 			</article>
+
 		<?php endwhile;?>
 
 		<?php do_action( 'foundationpress_after_content' ); ?>
+	</div>
 
-		</div>
+	<div class="small-12 large-4 columns" >
+		<aside>
+			<table class="stage-info">
+			  <thead>
+			    <tr>
+			      <th class="<?php echo get_post_custom_values('stage-district')[0];?>">Inicio de la ruta</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td>Content Goes Here</td>
+			    </tr>
+			  </tbody>
+			  <thead>
+			    <tr>
+			      <th class="<?php echo get_post_custom_values('stage-district')[0];?>">Fin de la ruta</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td>Content Goes Here</td>
+			    </tr>
+			  </tbody>
+			  <thead>
+			    <tr>
+			      <th class="<?php echo get_post_custom_values('stage-district')[0];?>">Duración</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td >Content Goes Here</td>
+			    </tr>
+			  </tbody>
+			  <thead>
+			    <tr>
+			      <th class="<?php echo get_post_custom_values('stage-district')[0];?>">Máximo de asistentes</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td>Content Goes Here</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</aside>
 	</div>
 </div>
 <?php get_footer(); ?>

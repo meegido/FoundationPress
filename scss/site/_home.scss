@@ -91,25 +91,6 @@
   border-bottom-left-radius: 13px;
   padding-top: 1em;
   padding-left: 3.8em;
-	&.universidad {
-		background-color: #BF69A0;
-	}
-	&.palacio {
-		background-color: #C7533D;
-	}
-	&.sol {
-		background-color: #A2CEEF;
-	}
-	&.cortes {
-		background-color: #A58755;
-	}
-	&.embajadores {
-		background-color:  #DC9C38;
-	}
-	&.justicia {
-		background-color: #6E8246;
-	}
-
 	a {
 		color: white;
 		&:hover {
@@ -131,3 +112,21 @@
 	margin-bottom: 2em;
 }
 
+.universidad {
+	background-color: #BF69A0;
+}
+.palacio {
+	background-color: #C7533D;
+}
+.sol {
+	background-color: #A2CEEF;
+}
+.cortes {
+	background-color: #A58755;
+}
+.embajadores {
+	background-color:  #DC9C38;
+}
+.justicia {
+	background-color: #6E8246;
+}
