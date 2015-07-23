@@ -6,8 +6,18 @@
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+  position: relative;
 }
 
 .stage-info {
   width: 100%;
+}
+
+.stage-date { 
+  color: $white;
+  font-size: 2em;
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+
 }
