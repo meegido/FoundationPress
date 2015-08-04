@@ -21,15 +21,13 @@
 				</div>
 			<?php endif; ?>
 		<header>
-			<h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-		</header>
-		<div class="entry-content">
-			<section class="excerpt-content">
-				<?php the_excerpt( __( 'Continue reading...', 'foundationpress' ) ); ?>
+		<aside class="bottom-card <?php echo get_post_custom_values('stage-district')[0];?>">
+			<section >
+				<p><?php show_date(get_the_ID()); ?></p>
 			</section>
-			<aside class="bottom-card <?php echo get_post_custom_values('stage-district')[0];?>">
-			
-				<span class="tag-label">
+		</aside>
+			<h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<span class="tag-label">
 					<?php $tags = get_the_tags(); 
 						foreach ($tags as $tag) {
 							$permalink = get_post_custom_values('route-link')[0];
@@ -37,11 +35,12 @@
 						}
 					 ?>
 				</span>
-				<section >
-					<p><?php show_date(get_the_ID()); ?></p>
-				</section>
+		</header>
+		<div class="entry-content">
+			<section class="excerpt-content">
+				<?php the_excerpt( __( 'Continue reading...', 'foundationpress' ) ); ?>
+			</section>
 			
-			</aside>
 		</div>
 	</article>
 </div>

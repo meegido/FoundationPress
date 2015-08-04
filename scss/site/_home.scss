@@ -41,6 +41,7 @@
 
 .tag-label {
 	font-style: italic;
+	padding-left: .9em;
 }
 
 .card-image {
@@ -83,12 +84,7 @@
 }
 
 .bottom-card {
-	opacity: 0.9;
-	position: absolute;
-  bottom: -1px;
   width: 100%;
-  border-bottom-right-radius: 13px;
-  border-bottom-left-radius: 13px;
   padding-top: 1em;
   padding-left: 3.8em;
 	a {
