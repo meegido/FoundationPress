@@ -21,7 +21,7 @@
 				</div>
 			<?php endif; ?>
 		<header>
-		<aside class="bottom-card <?php echo get_post_custom_values('stage-district')[0];?>">
+		<aside class="headband-card <?php echo get_post_custom_values('stage-district')[0];?>">
 			<section >
 				<p><?php show_date(get_the_ID()); ?></p>
 			</section>

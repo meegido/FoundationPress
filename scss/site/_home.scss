@@ -40,25 +40,29 @@
 }
 
 .tag-label {
+	display: inline-block;
 	font-style: italic;
-	padding-left: .9em;
+	font-size: .8em;
+	padding-left: .6em;
+	padding-top: 1em;
+	padding-bottom: .5em;
 }
 
 .card-image {
 	border-top-right-radius: 13px;
   border-top-left-radius: 13px;
 	background-size: cover;
-  height: 200px;
+  height: 180px;
 }
 
 .card-title {
-	font-size: 1.5em;
+	font-size: 1.7em;
+	font-family: $header-font-family;
 	text-transform: uppercase;
 	font-weight: 800;
-	font-family: $body-font-family;
-	padding-left: .5em;
-	margin-top: .5em;
-	margin-bottom: -.1em;
+	padding-left: .3em;
+	margin-top: -.3em;
+	margin-bottom: -.5em;
 	a {
 		color: $tuatara;
 	}
@@ -66,10 +70,11 @@
 
 .excerpt-content {
 	color: $tuatara;
-	padding-left: .9em;
+	padding-left: .5em;
   padding-right: .9em;
 	p {
-		font-size: .8rem;
+		font-size: .9rem;
+		margin-top: .4em;
 	}
 }
 
@@ -83,11 +88,15 @@
 	position: relative;
 }
 
-.bottom-card {
+.headband-card {
   width: 100%;
-  padding-top: 1em;
-  padding-bottom: .1em;
-  padding-left: 3.8em;
+  padding-top: .1em;
+  padding-left: .5em;
+  font-family: $header-font-family;
+  
+  p {
+  	font-weight: 800;
+  }
 	a {
 		color: white;
 		&:hover {
