@@ -1,14 +1,14 @@
 // Add some whitespace between top bar and content
 .top-bar-container, .tab-bar {
 	margin-bottom: rem-calc(40);
-	background-color: $white-smoke;
+	background-color: $smoke;
 }
 
 .top-bar {
-	background-color: $white-smoke;
+	background-color: $smoke;
 	display: inline-block;
 	.name {
-		background-color: $white-smoke;
+		background-color: $smoke;
 
 		h1 {
 			a {
@@ -30,16 +30,16 @@
 	width: 100%;
 	ul {
 		li{
-			background: $white-smoke;
+			background: $smoke;
 			a {
-				background: $white-smoke;
+				background: $smoke;
 				color: $black;
 			}
 		}
 	}
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
-	background: $white-smoke;
+	background: $smoke;
 }
 // A more subtle background color for the active menu item
 .top-bar-section li.active:not(.has-form) a:not(.button)  {
