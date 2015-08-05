@@ -22,17 +22,19 @@
 			<?php endif; ?>
 		<header>
 		<aside class="headband-card <?php echo get_post_custom_values('stage-district')[0];?>">
-			<span class="card-date"><?php show_date(get_the_ID()); ?></span>
-		</aside>
+			
 			<h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<span class="card-date"><?php show_date(get_the_ID()); ?></span>
 			<span class="tag-label">
 					<?php $tags = get_the_tags(); 
 						foreach ($tags as $tag) {
 							$permalink = get_post_custom_values('route-link')[0];
-							echo '<a href="'. $permalink .'">'. $tag->name .'</a>';
+							echo '<a href="'. $permalink .'">'. "#".$tag->name .'</a>';
 						}
 					 ?>
 				</span>
+		</aside>
+			
 		</header>
 		<div class="entry-content">
 			<section class="excerpt-content">

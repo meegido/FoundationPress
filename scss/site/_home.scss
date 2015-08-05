@@ -11,8 +11,6 @@
 	display: inline-block;
 	font-style: italic;
 	font-size: .8em;
-	padding-left: .6em;
-	padding-top: .8em;
 	padding-bottom: .5em;
 }
 
@@ -24,21 +22,21 @@
 }
 
 .card-title {
-	font-size: 1.5em;
+	font-size: 1.25em;
 	font-family: $header-font-family;
 	text-transform: uppercase;
 	font-weight: 800;
-	padding-left: .3em;
 	margin-top: .3em;
-	margin-bottom: -.5em;
+	margin-bottom: .1em;
 	a {
 		color: $tuatara;
 	}
 }
 
 .card-date {
-	font-size: 1em;
-  font-weight: 400;
+	font-size: .9em;
+  font-weight: 800;
+  color: white;
 }
 
 .excerpt-content {
