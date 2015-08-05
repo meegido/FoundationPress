@@ -25,9 +25,6 @@ get_header();
 ?>
 
 <div class="row">
-	<div class="grid-container small-12 large-12 columns" role="main">
-
-	
 
 	<?php if( $stages->have_posts() ) : ?>
 
