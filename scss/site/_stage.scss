@@ -1,3 +1,12 @@
+.reset-padding-left {
+	padding-left: 0;
+}
+
+.reset-table-padding{
+	padding-right: 3em;
+	padding-left: 4em;
+} 
+
 .entry-title {
 	font-size: 3.5rem;
   font-weight: 800;
@@ -41,38 +50,45 @@ table tr th {
 
 table tbody tr td,
 table tr td {
-	line-height: 1rem;
+	padding-top: 0rem;
+	font-weight: 200;
 }
+
+
 
 .content-field {
 	&.universidad {
-		border-bottom: 2px solid #BF69A0;
+		border-bottom: 2px ridge #BF69A0;
 		background: none;
+		td:last-child {
+			border-bottom: none;
+		}
 	}
 
+
 	&.palacio {
-		border-bottom: 2px solid #C7533D;
+		border-bottom: 2px ridge #C7533D;
 		background: none;
 	}
 
 	&.sol {
-		border-bottom: 2px solid #A2CEEF;
+		border-bottom: 2px ridge #A2CEEF;
 		background: none;
 
 	}
 
 	&.cortes {
-		border-bottom: 2px solid #A58755;
+		border-bottom: 2px ridge #A58755;
 		background: none;
 	}
 
 	&.embajadores {
-		border-bottom: 2px solid #DC9C38;
+		border-bottom: 2px ridge #DC9C38;
 		background: none;
 	}
 
 	&.justicia {
-		border-bottom: 2px solid #6E8246;
+		border-bottom: 2px ridge #6E8246;
 	}
 }
 

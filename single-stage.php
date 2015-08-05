@@ -43,7 +43,7 @@ get_header(); ?>
 </div>
 
 <div class="row">
-	<div class="small-12 large-8 columns" role="main">
+	<div class="small-12 large-8 columns reset-padding-left" role="main">
 		
 
 		<?php do_action( 'foundationpress_before_content' ); ?>
@@ -83,7 +83,7 @@ get_header(); ?>
 		<?php do_action( 'foundationpress_after_content' ); ?>
 	</div>
 
-	<div class="small-12 large-4 columns" >
+	<div class="small-12 large-4 columns reset-table-padding" >
 		<aside>
 			<table class="stage-info">
 			  <thead>
