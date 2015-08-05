@@ -30,12 +30,19 @@
 
 }
 
+table {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
 table tr th {
 	font-family: $header-font-family;
 	background-color: white;
 }
 
-
+table tbody tr td,
+table tr td {
+	line-height: 1rem;
+}
 
 .content-field {
 	&.universidad {
