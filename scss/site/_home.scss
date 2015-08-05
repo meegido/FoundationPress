@@ -1,43 +1,44 @@
 .grid-row {
 	$behavior: nest;
-
-			@include block-grid (
-			$per-row: true,
-	  	$spacing: $block-grid-default-spacing,
-	  	$include-spacing: true,
-	  	$base-style: false);
-
-			@mixin block-grid-html-classes($size, $include-spacing){
-				@media #{$small-up} {
-				@include block-grid-html-classes(
-					$size: small,
-					$include-spacing:true)
-			}
-
-			@media #{$medium-up} {
-				@include block-grid-html-classes($size:medium, $include-spacing:false);
-			}
-
-			@media #{$large-up} {
-				@include block-grid-html-classes($size:large, $include-spacing:false);
-			}
-
-
-			@media #{$xlarge-up} {
-				@include block-grid-html-classes($size:xlarge, $include-spacing:false);
-			}
-
-			@media #{$xxlarge-up} { }
-
-	}
-}
-
-.grid-row {
 	&:last-child {
 	float: left !important;
 	overflow: auto;
 	}
 }
+
+.block-grid-aligned {
+	@include block-grid (
+	$per-row: true,
+	$spacing: $block-grid-default-spacing,
+	$include-spacing: true,
+	$base-style: per-row);
+
+	@mixin block-grid-html-classes($size, $include-spacing){
+		@media #{$small-up} {
+		@include block-grid-html-classes(
+			$size: small,
+			$include-spacing:true)
+	}
+
+	@media #{$medium-up} {
+		@include block-grid-html-classes($size:medium, $include-spacing:false);
+	}
+
+	@media #{$large-up} {
+		@include block-grid-html-classes($size:large, $include-spacing:false);
+	}
+
+
+	@media #{$xlarge-up} {
+		@include block-grid-html-classes($size:xlarge, $include-spacing:false);
+	}
+
+	@media #{$xxlarge-up} { }
+
+	}
+
+}
+
 
 .tag-label {
 	display: inline-block;
