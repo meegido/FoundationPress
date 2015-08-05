@@ -1,5 +1,6 @@
-.grid-row {
-	$behavior: nest;
+.grid-home {
+	@include block-grid();
+
 	&:last-child {
 	float: left !important;
 	overflow: auto;

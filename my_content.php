@@ -10,7 +10,7 @@
  */
 
 ?>
-	<div class="grid-row small-2 large-4 columns">
+<li>
 	<article id="post-<?php the_ID(); ?>"  class="full-card">
 		<?php if ( has_post_thumbnail() ) : ?>
 				<div>
@@ -41,5 +41,5 @@
 			
 		</div>
 	</article>
-</div>
+</li>
 

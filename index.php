@@ -31,10 +31,14 @@ get_header();
 		<?php do_action( 'foundationpress_before_content' ); ?>
 
 		<?php get_template_part( 'promo', get_post_format() ); ?>
-
-		<?php while ( $stages->have_posts() ) : $stages->the_post(); ?>
-			<?php get_template_part( 'my_content', get_post_format() ); ?>
-		<?php endwhile; ?>
+		
+		<ul class="large-block-grid-4">
+			<?php while ( $stages->have_posts() ) : $stages->the_post(); ?>
+			
+				<?php get_template_part( 'my_content', get_post_format() ); ?>
+				
+			<?php endwhile; ?>
+		</ul>
 
 		<?php else : ?>
 			<?php get_template_part( 'my_content', 'stage' ); ?>
