@@ -5,7 +5,7 @@
 
 // We use these to define default font stacks
 $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-serif: "Alegraya SC", Georgia, Cambria, "Times New Roman", Times, serif;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
@@ -47,8 +47,8 @@ $body-font-color: $jet;
 $body-font-family: $font-family-sans-serif;
 $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
-$header-font-family: $font-family-monospace;
-$header-font-weight: 300;
+$header-font-family: $font-family-serif;
+$header-font-weight: 400;
 $header-text-rendering: optimizeLegibility;
 $topbar-link-weight: bold;
 
