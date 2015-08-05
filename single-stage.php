@@ -27,14 +27,13 @@ get_header(); ?>
 
 					<div class="row">
 						<div class="featured-image" style="background-image: url('<?php echo $thumb_url ?>')" >
-							<span class="stage-date"><?php echo get_post_custom_values('stage_date')[0];?></span>
+							
 						</div>
 					</div>
 					<?php endif; ?>
 
 				</header>
 
-				
 		</article>
 	<?php endwhile;?>
 
@@ -89,42 +88,52 @@ get_header(); ?>
 			<table class="stage-info">
 			  <thead>
 			    <tr>
-			      <th class="<?php echo get_post_custom_values('stage-district')[0];?>">Inicio de la ruta</th>
+			      <th class="title-field">DÍA</th>
 			    </tr>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td><?php echo get_post_custom_values('stage_meeting')[0];?></td>
+			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>"><?php echo get_post_custom_values('stage_date')[0];?></td>
 			    </tr>
 			  </tbody>
 			  <thead>
 			    <tr>
-			      <th class="<?php echo get_post_custom_values('stage-district')[0];?>">Hora</th>
+			      <th class="title-field">HORA</th>
 			    </tr>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td><?php echo get_post_custom_values('stage_hour')[0];?></td>
+			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>"><?php echo get_post_custom_values('stage_hour')[0];?></td>
 			    </tr>
 			  </tbody>
 			  <thead>
 			    <tr>
-			      <th class="<?php echo get_post_custom_values('stage-district')[0];?>">Duración</th>
+			      <th class="title-field">INICIO</th>
 			    </tr>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td >Content Goes Here</td>
+			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>"><?php echo get_post_custom_values('stage_meeting')[0];?></td>
 			    </tr>
 			  </tbody>
 			  <thead>
 			    <tr>
-			      <th class="<?php echo get_post_custom_values('stage-district')[0];?>">Máximo de asistentes</th>
+			      <th class="title-field">DURACIÓN</th>
 			    </tr>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td><?php echo get_post_custom_values('stage_maxpeople')[0];?></td>
+			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>">Content Goes Here</td>
+			    </tr>
+			  </tbody>
+			  <thead>
+			    <tr>
+			      <th class="title-field">MÁXIMO DE ASISTENTES</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>"><?php echo get_post_custom_values('stage_maxpeople')[0];?></td>
 			    </tr>
 			  </tbody>
 			</table>

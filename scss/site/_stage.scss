@@ -28,3 +28,48 @@
   bottom: 5%;
 
 }
+
+table tr th {
+	font-family: $header-font-family;
+	background-color: white;
+}
+
+
+table tbody tr td {
+	.content-field {
+		.universidad {
+			border-bottom-color: 2px solid #BF69A0;
+			background: none;
+		}
+
+		.palacio {
+			border-bottom-color: 2px solid #C7533D;
+			background-color: none;
+		}
+
+		.sol {
+			border-bottom-color: 2px solid #A2CEEF;
+			background-color: none;
+
+		}
+
+		.cortes {
+			border-bottom-color: 2px solid #A58755;
+			background-color: none;
+		}
+
+		.embajadores {
+			border-bottom-color: 2px solid #DC9C38;
+		}
+
+		.justicia {
+			border-bottom-color: 2px solid #6E8246;
+		}
+	}
+}
+
+	
+
+
+
+
