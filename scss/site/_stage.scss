@@ -13,6 +13,13 @@
   text-transform: uppercase;
 }
 
+.entry-content {
+	p {
+		font-size: rem-calc(15);
+	}
+
+}
+
 
 .featured-image {
 	height: 250px;
@@ -54,41 +61,46 @@ table tr td {
 	font-weight: 200;
 }
 
-
+.title-field {
+	font-size: rem-calc(16);
+}
 
 .content-field {
 	&.universidad {
 		border-bottom: 2px ridge #BF69A0;
 		background: none;
-		td:last-child {
-			border-bottom: none;
-		}
+		font-size: rem-calc(13);
 	}
 
 
 	&.palacio {
 		border-bottom: 2px ridge #C7533D;
 		background: none;
+		font-size: rem-calc(14);
 	}
 
 	&.sol {
 		border-bottom: 2px ridge #A2CEEF;
 		background: none;
-
+		font-size: rem-calc(14);
 	}
 
 	&.cortes {
 		border-bottom: 2px ridge #A58755;
 		background: none;
+		font-size: rem-calc(14);
 	}
 
 	&.embajadores {
 		border-bottom: 2px ridge #DC9C38;
 		background: none;
+		font-size: rem-calc(14);
 	}
 
 	&.justicia {
 		border-bottom: 2px ridge #6E8246;
+		background: none;
+		font-size: rem-calc(14);
 	}
 }
 

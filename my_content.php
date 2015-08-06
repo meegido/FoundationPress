@@ -22,7 +22,6 @@
 			<?php endif; ?>
 		<header>
 		<aside class="headband-card <?php echo get_post_custom_values('stage-district')[0];?>">
-			
 			<h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			<span class="card-date"><?php show_date(get_the_ID()); ?></span>
 			<span class="tag-label">
