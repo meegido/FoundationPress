@@ -55,24 +55,25 @@ get_header(); ?>
 				</header>
 
 				<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
-
+			<div>
+				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
+				<span class="route-tag">
+					<?php $tags = get_the_tags();
+					foreach ($tags as $tag) {
+						echo '<a href="#">'. "#". $tag->name .'</a>';
+						}
+					 ?>
+				</span>
+			</div>
 			<div class="entry-content">
 				<?php the_content(); ?>
 			</div>
 
+
 			<div class="map">
 				<iframe src="https://www.google.com/maps/d/embed?mid=zowQ-YO1Y8Lc.kk1rSSWKmEwo" width="100%" height="480"></iframe>
 			</div>
-			<footer>
-				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-				<span>
-					<?php $tags = get_the_tags();
-					foreach ($tags as $tag) {
-						echo '<a href="#">'. $tag->name .'</a>';
-						}
-					 ?>
-				</span>
-			</footer>
+			
 			<?php do_action( 'foundationpress_post_before_comments' ); ?>
 			<?php comments_template(); ?>
 			<?php do_action( 'foundationpress_post_after_comments' ); ?>
@@ -136,7 +137,19 @@ get_header(); ?>
 			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>"><?php echo get_post_custom_values('stage_maxpeople')[0];?></td>
 			    </tr>
 			  </tbody>
+			  <thead>
+			    <tr>
+			      <th class="title-field">PRECIO</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>"><?php echo get_post_custom_values('stage_price')[0];?></td>
+			    </tr>
+			  </tbody>
+
 			</table>
+
 		</aside>
 	</div>
 </div>

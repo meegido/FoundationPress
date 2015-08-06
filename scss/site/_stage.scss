@@ -9,15 +9,24 @@
 
 .entry-title {
 	font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
+  margin-bottom: -.6rem;
 }
 
 .entry-content {
 	p {
-		font-size: rem-calc(15);
+		font-size: rem-calc(16);
+		margin-top: rem-calc(20);
 	}
 
+}
+
+.route-tag {
+	a {
+		font-style: italic;
+		font-size: rem-calc(14);
+	}
 }
 
 
