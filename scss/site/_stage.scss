@@ -7,17 +7,18 @@
 	padding-left: 4em;
 } 
 
-.entry-title {
+.entry-title-stage {
 	font-size: 3.5rem;
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: -.6rem;
 }
 
-.entry-content {
+.entry-content-stage {
 	p {
 		font-size: rem-calc(16);
 		margin-top: rem-calc(20);
+		clear: both;
 	}
 
 }
@@ -113,8 +114,15 @@ table tr td {
 	}
 }
 
+.register {
+	background-image: url("../assets/img/logo-caminante.png");
+	background-repeat: no-repeat;
+	background-size: 70%;
+	float: right;
+	margin-top: rem-calc(-49);
+	height: 50%;
+}
 
-	
 
 
 

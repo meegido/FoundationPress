@@ -27,11 +27,9 @@ get_header(); ?>
 
 					<div class="row">
 						<div class="featured-image" style="background-image: url('<?php echo $thumb_url ?>')" >
-							
 						</div>
 					</div>
 					<?php endif; ?>
-
 				</header>
 
 		</article>
@@ -44,16 +42,17 @@ get_header(); ?>
 
 <div class="row">
 	<div class="small-12 large-8 columns reset-padding-left" role="main">
-		
 
 		<?php do_action( 'foundationpress_before_content' ); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<header>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<h1 class="entry-title-stage"><?php the_title(); ?></h1>
+					<span class="register">
+						<a href="#">Apuntarme</a>
+					</span>
 				</header>
-
 				<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 			<div>
 				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
@@ -65,15 +64,13 @@ get_header(); ?>
 					 ?>
 				</span>
 			</div>
-			<div class="entry-content">
+			<div class="entry-content-stage">
 				<?php the_content(); ?>
 			</div>
-
 
 			<div class="map">
 				<iframe src="https://www.google.com/maps/d/embed?mid=zowQ-YO1Y8Lc.kk1rSSWKmEwo" width="100%" height="480"></iframe>
 			</div>
-			
 			<?php do_action( 'foundationpress_post_before_comments' ); ?>
 			<?php comments_template(); ?>
 			<?php do_action( 'foundationpress_post_after_comments' ); ?>
@@ -147,9 +144,8 @@ get_header(); ?>
 			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>"><?php echo get_post_custom_values('stage_price')[0];?></td>
 			    </tr>
 			  </tbody>
-
 			</table>
-
+			
 		</aside>
 	</div>
 </div>

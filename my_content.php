@@ -35,7 +35,7 @@
 		</aside>
 			
 		</header>
-		<div class="entry-content">
+		<div>
 			<section class="excerpt-content">
 				<?php the_excerpt( __( 'Continue reading...', 'foundationpress' ) ); ?>
 			</section>
