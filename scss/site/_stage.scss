@@ -114,14 +114,36 @@ table tr td {
 	}
 }
 
+.register-content {
+	float: right;
+	margin-top: rem-calc(-49);
+}
+
+button.large, .button.large {
+	padding-top: rem-calc(50);
+	padding-right: rem-calc(50);
+}
+
+button, .button .register {
+	background-color: none;
+	border-color: none;
+}
+
 .register {
 	background-image: url("../assets/img/logo-caminante.png");
 	background-repeat: no-repeat;
-	background-size: 70%;
-	float: right;
-	margin-top: rem-calc(-49);
-	height: 50%;
+	background-size: 80%;
+	background-color: none;
 }
+
+.register-text {
+	float: right;
+	clear: both;
+	margin-top: rem-calc(50);
+	color: #6f6f6f;
+}
+
+
 
 
 

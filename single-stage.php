@@ -49,9 +49,12 @@ get_header(); ?>
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<header>
 					<h1 class="entry-title-stage"><?php the_title(); ?></h1>
-					<span class="register">
-						<a href="#">Apuntarme</a>
-					</span>
+					<div class="register-content">
+						<span class="button large register"></span>
+						<span>
+							<a class="register-text" href="#">Quiero ir...</a>
+						</span>
+					</div>
 				</header>
 				<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 			<div>
