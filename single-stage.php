@@ -50,10 +50,7 @@ get_header(); ?>
 				<header>
 					<h1 class="entry-title-stage"><?php the_title(); ?></h1>
 					<div class="register-content">
-						<span class="button large register"></span>
-						<span>
-							<a class="register-text" href="#">Quiero ir...</a>
-						</span>
+						<a class="button large register"><img src="<?php home_url()?>/wp-content/themes/FoundationPress/assets/img/logo-caminante.png"/>Quiero ir...</a>
 					</div>
 				</header>
 				<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
