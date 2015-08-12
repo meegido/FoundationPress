@@ -49,9 +49,7 @@ get_header(); ?>
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<header>
 					<h1 class="entry-title-stage"><?php the_title(); ?></h1>
-					<div class="register-content">
-						<a class="button large register"><img src="<?php home_url()?>/wp-content/themes/FoundationPress/assets/img/logo-caminante.png"/>Quiero ir...</a>
-					</div>
+						<a class="button large register <?php echo get_post_custom_values('stage-district')[0];?>"><img src="<?php home_url()?>/wp-content/themes/FoundationPress/assets/img/logo-caminante.png"/>Quiero ir...</a>
 				</header>
 				<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 			<div>

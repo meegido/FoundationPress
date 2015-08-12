@@ -125,22 +125,40 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .register {
 	float: right;
-	margin-top: rem-calc(-53);
-	background-image: url();
-	background-repeat: no-repeat;
-	background-size: 39%;
-	background-color: transparent;
-}
+	margin-top: rem-calc(-63);
+	width: 20%;
+	border-radius: 7px;
+  padding: 25px 60px 25px 90px;
+  &.universidad {
+		background-color: #BF69A0;
+		box-shadow: 0 5px #8a4a73;
+	}
 
-.register-text {
-	float: right;
-	clear: both;
-	margin-top: rem-calc(53);
-	color: white;
-	font-weight: 400;
-	box-shadow: inset 0px 1px 0px #ca73f8, 0px 5px 0px 0px #6a1099, 0px 10px 5px #999;
-}
+	&.palacio {
+		background-color: #C7533D;
+		box-shadow: 0 5px #973b29;
+	}
 
+	&.sol {
+		background-color: #A2CEEF;
+		box-shadow: 0 5px #7ba0ba;
+	}
+
+	&.cortes {
+		background-color: #A58755;
+		box-shadow: 0 5px #7b623d;
+	}
+
+	&.embajadores {
+		background-color: #DC9C38;
+		box-shadow: 0 5px #ad7929;
+	}
+
+	&.justicia {
+		background-color: #6E8246;
+		box-shadow: 0 5px #4e5d30;
+	}
+}
 
 
 
