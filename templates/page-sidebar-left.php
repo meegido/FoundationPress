@@ -4,7 +4,7 @@ Template Name: Left Sidebar
 */
 get_header(); ?>
 <div class="row">
-    <div class="small-12 large-8 large-push-4 columns" role="main">
+    <div class="small-12 large-8 large-4 columns" role="main">
 
         <?php do_action( 'foundationpress_before_content' ); ?>
 
@@ -30,6 +30,6 @@ get_header(); ?>
         <?php do_action( 'foundationpress_after_content' ); ?>
 
     </div>
-    <?php get_sidebar( 'left' ); ?>
+    <?php get_sidebar( 'right' ); ?>
 </div>
 <?php get_footer(); ?>
