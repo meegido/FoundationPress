@@ -123,12 +123,26 @@ button:hover, button:focus, .button:hover, .button:focus {
 	background-color: transparent;
 }
 
+a.button.small.register.fa.fa-circle-o-notch.cortes {
+	padding: 1.125rem 10.25rem 1.1875rem 6.25rem;
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	margin: -10px 3px;
+  letter-spacing: 1px;
+  &:before {
+  		
+  }
+
+}
+
+
+
 .register {
 	float: right;
 	margin-top: rem-calc(-63);
 	width: 20%;
 	border-radius: 7px;
-  padding: 25px 60px 25px 90px;
   &.universidad {
 		background-color: #BF69A0;
 		box-shadow: 0 5px #8a4a73;
