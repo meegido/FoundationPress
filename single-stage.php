@@ -147,7 +147,34 @@ get_header(); ?>
 		</aside>
 		<div class="row">
 			<div class="small-12 large-12 colums">
-				<a class="button large register <?php show_district()?>"><span class="icon-logo-walker pink left"></span>Quiero ir...</a>
+				<a class="button large register <?php show_district()?>" id="register-button"><span class="icon-logo-walker pink left"></span>Quiero ir...</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 large-12 columns">
+				<form class="register-form" id="register-form">
+					<fieldset class="user-register">
+						<label class="username-register">Nombre*
+							<input type="text" name="username-register" id="username-register" required>
+						</label>
+						<label class="email-address">Email*
+							<input type="email" name="email-address" placeholder="tumail@placeholder.com" id="email-address" required>
+						</label>
+						<label class="phone">Teléfono*
+							<input type="tel" name="phone" placeholder="tu teléfono" id="phone" required>
+						</label>
+						<label class="group" for="checkbox">¿Vienes en grupo?
+							<input type="checkbox" name="checkbox" value="checkbox" id="checkbox">
+						</label>
+						<label class="group-response">¿Cuántos sois?
+							<input type="text" name="group-response" id="group-response" required>
+						</label>
+						<label class="terms" for="checkbox"><a href="#">Acepto los términos y condiciones</a>
+							<input type="checkbox" name="term-checkbox" value="term-checkbox" id="terms-checkbox">
+						</label>
+						<input type="submit" name="submit" value="Enviar">
+					</fieldset>
+				</form>
 			</div>
 		</div>
 	</div>
