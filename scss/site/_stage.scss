@@ -122,7 +122,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 	background-color: transparent;
 }
 
-
 .button {
 	&.large {
 		padding: 0;
@@ -130,9 +129,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .register {
-	width: 100%;
+	width: 90%;
 	border-radius: 7px;
 	position: relative;
+	margin-left: .8em;
 
 	&:after {
 			position: absolute;
@@ -177,5 +177,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 		background-color: #6E8246;
 		box-shadow: 0 5px #4e5d30;
 	}
+}
+
+p.text-button {
+	padding-top: 1em;
+	letter-spacing: 0.0825em;
 }
 

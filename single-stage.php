@@ -147,7 +147,7 @@ get_header(); ?>
 		</aside>
 		<div class="row">
 			<div class="small-12 large-12 colums">
-				<a class="button large register <?php show_district()?>" id="register-button"><span class="icon-logo-walker pink left"></span>Quiero ir...</a>
+				<a class="button large register <?php show_district()?>" id="register-button"><span class="icon-logo-walker pink left"></span><p class="text-button">QUIERO IR...</p></a>
 			</div>
 		</div>
 		<div class="row">
