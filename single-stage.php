@@ -89,7 +89,7 @@ get_header(); ?>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>"><?php echo get_post_custom_values('stage_date')[0];?></td>
+			      <td class="content-field <?php show_district()?>"><?php echo get_post_custom_values('stage_date')[0];?></td>
 			    </tr>
 			  </tbody>
 			  <thead>
@@ -99,7 +99,7 @@ get_header(); ?>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>"><?php echo get_post_custom_values('stage_hour')[0];?></td>
+			      <td class="content-field <?php show_district()?>"><?php echo get_post_custom_values('stage_hour')[0];?></td>
 			    </tr>
 			  </tbody>
 			  <thead>
@@ -109,7 +109,7 @@ get_header(); ?>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>"><?php echo get_post_custom_values('stage_meeting')[0];?></td>
+			      <td class="content-field <?php show_district()?>"><?php echo get_post_custom_values('stage_meeting')[0];?></td>
 			    </tr>
 			  </tbody>
 			  <thead>
@@ -119,7 +119,7 @@ get_header(); ?>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>">Content Goes Here</td>
+			      <td class="content-field <?php show_district()?>">Content Goes Here</td>
 			    </tr>
 			  </tbody>
 			  <thead>
@@ -129,7 +129,7 @@ get_header(); ?>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>"><?php echo get_post_custom_values('stage_maxpeople')[0];?></td>
+			      <td class="content-field <?php show_district()?>"><?php echo get_post_custom_values('stage_maxpeople')[0];?></td>
 			    </tr>
 			  </tbody>
 			  <thead>
@@ -139,17 +139,17 @@ get_header(); ?>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td class="content-field <?php echo get_post_custom_values('stage-district')[0];?>"><?php echo get_post_custom_values('stage_price')[0];?></td>
+			      <td class="content-field <?php show_district()?>"><?php echo get_post_custom_values('stage_price')[0];?></td>
 			    </tr>
 			  </tbody>
 			</table>
-			<div class="row">
-				<div class="large-12 text-center colums">
-					<a class="button small register <?php echo get_post_custom_values('stage-district')[0];?>"><span class="icon-logo-walker"></span> Quiero ir...</a>
-				</div>
-			</div>
 
 		</aside>
+		<div class="row">
+			<div class="small-12 large-12 colums">
+				<a class="button large register <?php show_district()?>"><span class="icon-logo-walker pink left"></span>Quiero ir...</a>
+			</div>
+		</div>
 	</div>
 </div>
 <?php get_footer(); ?>

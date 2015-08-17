@@ -123,24 +123,35 @@ button:hover, button:focus, .button:hover, .button:focus {
 	background-color: transparent;
 }
 
-a.button.small.register.fa.fa-circle-o-notch.cortes {
-	padding: 1.125rem 10.25rem 1.1875rem 6.25rem;
-	cursor: pointer;
-	display: inline-block;
-	position: absolute;
-	margin: -10px 3px;
-  letter-spacing: 1px;
-  &:before {
-  		
-  }
 
+.button {
+	&.large {
+		padding: 0;
+	}
 }
 
 .register {
+	width: 100%;
 	border-radius: 7px;
+	position: relative;
+
+	&:after {
+			position: absolute;
+			content: "  ";
+	    width: 20px;
+	    height: 20px;
+	    background: $white;
+	    z-index: 1;
+	    left: 61px;
+	    top: 50%;
+	    margin: -10px 0 0 -10px;
+	    transform: rotate(45deg);
+	}
+
   &.universidad {
 		background-color: #BF69A0;
 		box-shadow: 0 5px #8a4a73;
+
 	}
 
 	&.palacio {

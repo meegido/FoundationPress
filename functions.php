@@ -65,4 +65,8 @@ function show_price($stage_id) {
   echo get_post_meta( $stage_id, 'stage_price', true );
 }
 
+function show_district($stage_id) {
+    echo get_post_custom_values('stage-district', $stage_id)[0];
+}
+
 ?>
