@@ -145,7 +145,7 @@ get_header(); ?>
 			</table>
 			<div class="row">
 				<div class="large-12 text-center colums">
-					<a class="button small register fa fa-circle-o-notch <?php echo get_post_custom_values('stage-district')[0];?>"><!-- <img src="<?php home_url()?>/wp-content/themes/FoundationPress/assets/img/logo-caminante.png"/> -->Quiero ir...</a>
+					<a class="button small register <?php echo get_post_custom_values('stage-district')[0];?>"><span class="icon-logo-walker"></span> Quiero ir...</a>
 				</div>
 			</div>
 
