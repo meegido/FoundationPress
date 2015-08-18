@@ -153,7 +153,7 @@ get_header(); ?>
 		<div class="row">
 			<div class="small-12 large-12 columns">
 				<form class="register-form" id="register-form">
-					<fieldset class="user-register">
+					<div class="user-register">
 						<label class="username-register">Nombre*
 							<input type="text" name="username-register" id="username-register" required>
 						</label>
@@ -173,7 +173,7 @@ get_header(); ?>
 							<input type="checkbox" name="term-checkbox" value="term-checkbox" id="terms-checkbox">
 						</label>
 						<input type="submit" name="submit" value="Enviar">
-					</fieldset>
+					</div>
 				</form>
 			</div>
 		</div>
