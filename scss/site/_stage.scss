@@ -137,50 +137,50 @@ button:hover, button:focus, .button:hover, .button:focus {
 	&:after {
 			position: absolute;
 			content: "  ";
-	    width: 20px;
-	    height: 20px;
+	    width: 15px;
+	    height: 15px;
 	    background: $white;
 	    z-index: 1;
-	    left: 61px;
-	    top: 50%;
+	    left: 74px;
+	    top: 55%;
 	    margin: -10px 0 0 -10px;
 	    transform: rotate(45deg);
 	}
 
   &.universidad {
 		background-color: #BF69A0;
-		box-shadow: 0 5px #8a4a73;
+		box-shadow: 0 3px #8a4a73;
 
 	}
 
 	&.palacio {
 		background-color: #C7533D;
-		box-shadow: 0 5px #973b29;
+		box-shadow: 0 3px #973b29;
 	}
 
 	&.sol {
 		background-color: #A2CEEF;
-		box-shadow: 0 5px #7ba0ba;
+		box-shadow: 0 3px #7ba0ba;
 	}
 
 	&.cortes {
 		background-color: #A58755;
-		box-shadow: 0 5px #7b623d;
+		box-shadow: 0 3px #7b623d;
 	}
 
 	&.embajadores {
 		background-color: #DC9C38;
-		box-shadow: 0 5px #ad7929;
+		box-shadow: 0 3px #ad7929;
 	}
 
 	&.justicia {
 		background-color: #6E8246;
-		box-shadow: 0 5px #4e5d30;
+		box-shadow: 0 3px #4e5d30;
 	}
 }
 
 p.text-button {
-	padding-top: 1em;
+	padding-top: 1.5em;
 	letter-spacing: 0.0825em;
 }
 
