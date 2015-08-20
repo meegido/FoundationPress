@@ -154,7 +154,7 @@ get_header(); ?>
 			<div class="small-12 large-12 columns">
 
 				<div class="register-form" id="register-form">
-					<?php echo do_shortcode( '[contact-form-7 id="148" title="Formulario de registro"]' ); ?>
+					<?php echo do_shortcode( '[contact-form-7 id="148" title="Formulario de registro" ]' ); ?>
 				</div>
 			</div>
 		</div>
