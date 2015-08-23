@@ -1,0 +1,38 @@
+.mvp, .cb {
+	
+		margin-left: rem-calc(60);
+}
+
+.content {
+	content: '';
+	margin-top: .46em;
+	height: 10px;
+	width: 30px;
+	float: left;
+	.cortes {
+		background-color: #A58755;
+	}
+	.embajadores {
+		background-color:  #DC9C38;
+	}
+	.justicia {
+		background-color: #6E8246;
+	}
+
+}
+
+.district-text {
+	p {
+		float: right;
+		padding-left: 5.4em;
+		font-size: rem-calc(14);
+	}
+}
+
+#text-4 {
+	h6 {
+		margin-left: rem-calc(60);
+		margin-top: rem-calc(60);
+		font-weight: 800;
+	}
+}
