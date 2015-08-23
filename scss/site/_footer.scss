@@ -2,15 +2,35 @@
 @media #{$medium-up} {
 	footer.row {
 		margin-top: rem-calc(40);
+		padding-top: rem-calc(40);
+		padding-left: rem-calc(60);
+		background-color: $black;
+		max-width: none;
 	}
 }
 
-.footer-body {
+#nav_menu-2, #nav_menu-3, #text-2 {
+	h6 {
+		color: white;
+		text-transform: uppercase;
+		font-size: rem-calc(18);
+		font-weight: 800;
+	}
+}
+
+footer ul {
+	margin-left: 0;
+
 }
 
 footer li {
-
 		list-style-type: none;
-	
-	
+}
+
+footer a {
+	color: $white;
+	font-size: rem-calc(13);
+	&:hover {
+		color:#7f8c8d;
+	}
 }
