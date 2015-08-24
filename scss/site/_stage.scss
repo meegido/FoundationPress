@@ -43,7 +43,8 @@
 
 .stage-info {
   width: 100%;
-  margin-top: 1.2em;
+  margin-top: 16px;
+  margin-left: 50px;
 }
 
 .stage-date {
@@ -132,7 +133,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 	width: 90%;
 	border-radius: 7px;
 	position: relative;
-	margin-left: .8em;
+	margin-left: 66px;
 
 	&:after {
 			position: absolute;
@@ -186,18 +187,26 @@ p.text-button {
 
 .navigation {
 	margin-top: 14px;
-	margin-bottom: 40px;
+
 }
 .previous {
-	float: left;
+	position: absolute;
+	top: 210px;
+	left: 0.5em;
 }
 
 .post {
-	float: right;
+	position: absolute;
+	top: 210px;
+	right: 0.5em
 }
 
 .navigation-text {
 	display: flex;
+	color: $black;
+	&:hover {
+		color: $tuatara;
+	}
 }
 
 .locate-prev {
@@ -212,6 +221,10 @@ p.text-button {
 
 .fa-chevron-left {
 	display: flex;
+	color: $black;
+	&:hover {
+		color: $tuatara;
+	}
 }
 
 .fa-chevron-right {
