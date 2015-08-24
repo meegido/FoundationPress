@@ -11,6 +11,7 @@ $( document ).ready(function () {
 		$('#walker-icon').css('color', color);
 	};
 
-
 });
+
+
 
