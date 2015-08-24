@@ -28,6 +28,14 @@ get_header(); ?>
 					<div class="row">
 						<div class="featured-image" style="background-image: url('<?php echo $thumb_url ?>')" >
 						</div>
+						<section class="navigation">
+							<div class="previous">
+								<?php previous_post_link('<strong>%link</strong>', 'ᐊ Ir a ruta anterior'); ?>
+							</div>
+							<div class="post">
+								<?php next_post_link('<strong>%link</strong>', 'Ir a ruta siguiente ᐅ'); ?>
+							</div>
+						</section>
 					</div>
 					<?php endif; ?>
 				</header>
