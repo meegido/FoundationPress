@@ -30,10 +30,10 @@ get_header(); ?>
 						</div>
 						<section class="navigation">
 							<div class="previous">
-								<?php previous_post_link('<strong>%link</strong>', 'ᐊ Ir a ruta anterior'); ?>
+								<?php next_post_link('<strong>%link</strong>', 'ᐊ Ir a ruta anterior'); ?>
 							</div>
 							<div class="post">
-								<?php next_post_link('<strong>%link</strong>', 'Ir a ruta siguiente ᐅ'); ?>
+								<?php previous_post_link('<strong>%link</strong>', 'Ir a ruta siguiente ᐅ'); ?>
 							</div>
 						</section>
 					</div>
