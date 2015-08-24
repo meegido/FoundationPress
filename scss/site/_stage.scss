@@ -184,11 +184,43 @@ p.text-button {
 	letter-spacing: 0.0825em;
 }
 
+.navigation {
+	margin-top: 14px;
+	margin-bottom: 40px;
+}
 .previous {
 	float: left;
 }
 
 .post {
 	float: right;
+}
+
+.navigation-text {
+	display: flex;
+}
+
+.locate-prev {
+	padding-left: 8px;
+	margin: auto;
+}
+
+.fa-chevron-left:before {
+	font-size: 30px;
+
+}
+
+.fa-chevron-left {
+	padding-left: 8px;
+	display: flex;
+}
+
+.fa-chevron-right {
+	padding-left: 8px;
+}
+
+.fa-chevron-right:before {
+	font-size: 30px;
+
 }
 
