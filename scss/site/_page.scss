@@ -4,6 +4,12 @@
 
 .leyend-title {
 	margin-bottom: rem-calc(18);
+	a {
+		color: $aluminum;
+		&:hover {
+		color: $black;
+		}
+	}
 }
 
 .content {
