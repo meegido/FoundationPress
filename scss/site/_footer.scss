@@ -31,7 +31,8 @@ footer a {
 	color: $white;
 	font-size: rem-calc(13);
 	&:hover {
-		color:#7f8c8d;
+		color: $white;
+		border-bottom: 1px solid $white;
 	}
 }
 
