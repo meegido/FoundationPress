@@ -26,6 +26,10 @@
 	a {
 		font-style: italic;
 		font-size: rem-calc(14);
+		color: $aluminum;
+		&:hover {
+			color: $black;
+		}
 	}
 }
 
