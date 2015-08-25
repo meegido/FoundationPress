@@ -84,8 +84,8 @@ get_header(); ?>
 
 		<?php do_action( 'foundationpress_after_content' ); ?>
 	</div>
-	<div class="small-12 large-4 columns reset-table-padding" >
-		<aside>
+	<div class="small-12 large-4 columns" >
+		<aside class="reset-table-padding">
 			<table class="stage-info">
 			  <thead>
 			    <tr>
@@ -151,7 +151,7 @@ get_header(); ?>
 
 		</aside>
 		<div class="row">
-			<div class="small-12 large-12 colums">
+			<div class="small-12 large-12 colums reset-table-padding">
 				<a class="button large register <?php show_district()?>" id="register-button"><span id='walker-icon' class="icon-logo-walker pink left"></span><p class="text-button">QUIERO IR...</p></a>
 			</div>
 		</div>

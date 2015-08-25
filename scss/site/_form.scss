@@ -1,11 +1,14 @@
 .register-form {
 	display: none;
 	background-color: $white;
-	margin: -1.235rem 0;
+	//margin: -1.235rem 0;
+	margin-left: 84px;
+  margin-top: -23px;
+  margin-right: -17px;
 	padding-top: 1.25rem;
 	padding-bottom: 0px;
 	padding-right: 1.25rem;
-	padding-left: 1.25rem;
+	padding-left: 1.25rem; 
 	font-family: $font-family-sans-serif;
 	p {
 		font-size: rem-calc(14);
