@@ -124,7 +124,7 @@ get_header(); ?>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td class="content-field <?php show_district()?>">Content Goes Here</td>
+			      <td class="content-field <?php show_district()?>">2.30h</td>
 			    </tr>
 			  </tbody>
 			  <thead>
