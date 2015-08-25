@@ -42,25 +42,50 @@
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background: $ghost;
+	&:hover	{
+				background-color: $ghost;
+				color: $black;
+				border-bottom: 2px solid $black;
+				padding-bottom: 0px;
+			}
 }
 // A more subtle background color for the active menu item
+
+
 .top-bar-section li.active:not(.has-form) a:not(.button)  {
-	background: $black;
+	background-color: $ghost;
+	color: $black;
+	
+	padding-bottom: 0px;
+	&:hover {
+		background-color: $ghost;
+		color: $black;
+		border-bottom: 2px solid $black;
+		padding-bottom: 0px;
+	}
+			
 }
+
 .top-bar-section {
 	li.active:not(.has-form) {
-		background: #202020;
+		background-color: $ghost;
+		color: $black;
+		border-bottom: 2px solid $black;
+		padding-bottom: 0px;
 	}
 
   a:hover:not(.button) {
-		background: #202020;
+		background-color: $ghost;
+		color: $black;
+		border-bottom: 2px solid $black;
+		padding-bottom: 0px;
 	}
 }
 
 .tab-bar {
 	margin-bottom: rem-calc(10);
 	.menu-icon {
-		background-color: $black;
+		background-color: none;
 	}
 }
 
