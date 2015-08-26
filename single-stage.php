@@ -71,10 +71,6 @@ get_header(); ?>
 			<div class="entry-content-stage">
 				<?php the_content(); ?>
 			</div>
-
-			<div class="map">
-				<iframe src="https://www.google.com/maps/d/embed?mid=zowQ-YO1Y8Lc.kk1rSSWKmEwo" width="100%" height="480"></iframe>
-			</div>
 			<select class="hidden-menu-date" id="hidden-menu-date">
 				<?php $dates = get_post_custom_values('stage_date');?>
 				<?php foreach ($dates as $date) {
