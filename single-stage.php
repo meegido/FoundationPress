@@ -49,7 +49,7 @@ get_header(); ?>
 </div>
 
 <div class="row">
-	<div class="small-12 large-8 columns reset-padding-left" role="main">
+	<div class="small-12 medium-8 large-8 columns reset-padding-left" role="main">
 		<?php do_action( 'foundationpress_before_content' ); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -86,7 +86,7 @@ get_header(); ?>
 
 		<?php do_action( 'foundationpress_after_content' ); ?>
 	</div>
-	<div class="small-12 large-4 columns" >
+	<div class="small-12 medium-4 large-4 columns" >
 		<aside class="reset-table-padding">
 			<table class="stage-info">
 			  <thead>
@@ -153,7 +153,7 @@ get_header(); ?>
 
 		</aside>
 		<div class="row">
-			<div class="small-12 large-12 colums reset-table-padding">
+			<div class="small-12 medium-12 large-12 colums reset-table-padding">
 				<a class="button large register <?php show_district()?>" id="register-button"><span id='walker-icon' class="icon-logo-walker pink left"></span><p class="text-button">QUIERO IR...</p></a>
 			</div>
 		</div>

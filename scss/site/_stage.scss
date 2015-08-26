@@ -2,8 +2,7 @@
 	padding-left: 0;
 	@media #{$medium-only} {
     padding-left: 15px;
-
-    }
+  }
 }
 
 .reset-table-padding{
@@ -53,6 +52,9 @@
   width: 100%;
   margin-top: 16px;
   margin-left: 50px;
+  @media #{$medium-only} {
+    margin-left: 0px;
+  }
 }
 
 .stage-date {
@@ -142,6 +144,9 @@ button:hover, button:focus, button:hover, button:focus {
 	border-radius: 7px;
 	position: relative;
 	margin-left: 66px;
+	@media #{$medium-only} {
+    margin-left: 16px;
+  }
 
 	&:after {
 			position: absolute;
@@ -220,6 +225,15 @@ p.text-button {
 .locate-prev {
 	padding-left: 8px;
 	margin: auto;
+	@media #{$medium-only} {
+    font-weight: 400;
+  }
+}
+
+.locate-post {
+	@media #{$medium-only} {
+    font-weight: 400;
+  }
 }
 
 .fa-chevron-left:before {

@@ -1,7 +1,6 @@
 .register-form {
 	display: none;
 	background-color: $white;
-	//margin: -1.235rem 0;
 	margin-left: 84px;
   margin-top: -23px;
   margin-right: -17px;
@@ -10,6 +9,11 @@
 	padding-right: 1.25rem;
 	padding-left: 1.25rem; 
 	font-family: $font-family-sans-serif;
+	@media #{$medium-only} {
+    margin-left: 33px;
+    margin-right: 28px;
+  }
+
 	p {
 		font-size: rem-calc(14);
 	}
