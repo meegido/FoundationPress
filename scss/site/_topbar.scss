@@ -94,6 +94,20 @@
 		background-color: none;
 	}
 }
+.tab-bar .menu-icon span {
+	&:after {
+		box-shadow: 0 0 0 1px $black,0 7px 0 1px $black,0 14px 0 1px $black;
+		margin-top: -.2rem;
+		width: 1.4rem;
+		border: 1px solid $black;
+	}
+}
+
+.left-small {
+	border-right: none;
+
+}
+
 
 .title-area {
 	height: 0.9em;
@@ -112,6 +126,7 @@
     margin-top: 1em;
   }
 }
+
 
 
 // Switch between the mobile menu (tab-bar) and desktop menu (topbar) based on a custom $topbar-breakpoint value.
