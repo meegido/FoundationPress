@@ -107,11 +107,11 @@
 
 .no-padding {
 	@media #{$medium-only} {
-    padding: 35px ;
+    padding-left: 35px ;
 
     }
   @media #{$small-only} {
-    padding: 8px ;
+    padding-left: 8px ;
 
     }
 }
