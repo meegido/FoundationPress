@@ -5,8 +5,11 @@
 		padding-top: rem-calc(40);
 		padding-left: rem-calc(60);
 		background-color: $black;
-		max-width: none;
 	}
+}
+
+footer.row {
+	max-width: none;
 }
 
 #nav_menu-2, #nav_menu-3, #text-2 {
@@ -15,6 +18,11 @@
 		text-transform: uppercase;
 		font-size: rem-calc(18);
 		font-weight: 800;
+	}
+	@media #{$medium-up} {
+		width: 33%;
+		height: 400px;
+
 	}
 }
 
