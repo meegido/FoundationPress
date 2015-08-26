@@ -1,5 +1,9 @@
 .reset-padding-left {
 	padding-left: 0;
+	@media #{$medium-only} {
+    padding-left: 15px;
+
+    }
 }
 
 .reset-table-padding{
