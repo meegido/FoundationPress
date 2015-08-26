@@ -29,6 +29,9 @@
 .top-bar-section {
 	width: 100%;
 	margin-left: 14%;
+	@media #{$medium-only} {
+    margin-left: -1px ;
+  }
 
 	ul {
 		li{
@@ -91,6 +94,10 @@
 
 .title-area {
 	height: 0.9em;
+	@media #{$medium-only} {
+    padding-left: 41px ;
+
+    }
 }
 
 .divider {
