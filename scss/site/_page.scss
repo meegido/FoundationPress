@@ -4,6 +4,10 @@
 
 .leyend-item {
 		margin-left: rem-calc(60);
+		@media #{$small-only} {
+    margin-left: 0em ;
+
+    }
 }
 
 .leyend-title {
@@ -44,5 +48,10 @@
 		margin-left: rem-calc(60);
 		margin-top: rem-calc(60);
 		font-weight: 800;
+
+		@media #{$small-only} {
+    margin-left: 0rem ;
+    margin-top: 0rem;
+    }
 	}
 }
