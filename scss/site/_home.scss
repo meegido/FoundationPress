@@ -104,3 +104,10 @@
 .justicia {
 	background-color: #6E8246;
 }
+
+.no-padding {
+	@media #{$medium-only} {
+    padding: 35px ;
+
+    }
+}
