@@ -59,7 +59,7 @@
 		</section>
 		<section class="middle tab-bar-section">
 			<h1 class="title">
-				<?php bloginfo( 'name' ); ?>
+				<a href = "<?php echo get_bloginfo('wpurl') ?>"><img class="logo" src="<?php echo get_bloginfo('template_url') ?>/assets/img/cicero-logo.png"/></a>
 			</h1>
 			
 		</section>

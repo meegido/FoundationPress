@@ -21,9 +21,12 @@
 }
 
 .logo {
-
 	margin-top: 1em;
 	width: 31%;
+	@media #{$small-only} {
+    width: 100%;
+    margin-top: 0em;
+  }
 }
 
 .top-bar-section {
@@ -104,7 +107,11 @@
 	visibility: hidden;
 }
 
-
+.container{
+	@media #{$small-only} {
+    margin-top: 1em;
+  }
+}
 
 
 // Switch between the mobile menu (tab-bar) and desktop menu (topbar) based on a custom $topbar-breakpoint value.
