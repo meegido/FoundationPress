@@ -110,4 +110,8 @@
     padding: 35px ;
 
     }
+  @media #{$small-only} {
+    padding: 8px ;
+
+    }
 }
