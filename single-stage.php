@@ -60,13 +60,13 @@ get_header(); ?>
 				<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 			<div>
 				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-				<span class="route-tag">
-					<?php $tags = get_the_tags();
-					foreach ($tags as $tag) {
-						echo '<a href="#">'. "#". $tag->name .'</a>';
-						}
-					 ?>
-				</span>
+			<span class="route-tag">
+				<?php $tags = get_the_tags();
+				foreach ($tags as $tag) {
+					echo '<a href="#">'. "#". $tag->name .'</a>';
+					}
+				 ?>
+			</span>
 			</div>
 			<div class="entry-content-stage">
 				<?php the_content(); ?>
@@ -75,6 +75,12 @@ get_header(); ?>
 			<div class="map">
 				<iframe src="https://www.google.com/maps/d/embed?mid=zowQ-YO1Y8Lc.kk1rSSWKmEwo" width="100%" height="480"></iframe>
 			</div>
+			<select class="hidden-menu-date" id="hidden-menu-date">
+				<?php $dates = get_post_custom_values('stage_date');?>
+				<?php foreach ($dates as $date) {
+					echo '<option>'. $date . '</option>';
+				};?>
+			</select>
 			<?php do_action( 'foundationpress_post_before_comments' ); ?>
 			<?php comments_template(); ?>
 			<?php do_action( 'foundationpress_post_after_comments' ); ?>
@@ -157,7 +163,6 @@ get_header(); ?>
 		</div>
 		<div class="row">
 			<div class="small-12 large-12 columns">
-
 				<div class="register-form" id="register-form">
 					<?php echo do_shortcode( '[contact-form-7 id="148" title="Formulario de registro" ]' ); ?>
 				</div>
