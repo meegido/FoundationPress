@@ -1,3 +1,13 @@
+.entry-title {
+	@media #{$medium-only} {
+		padding-left: 12px
+	}
+}
+
+.fw-col-xs-12.fw-col-sm-6 {
+	padding-left: 0px;
+}
+
 .leyend-item {
 		margin-left: rem-calc(60);
 }
