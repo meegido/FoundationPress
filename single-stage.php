@@ -96,7 +96,7 @@ get_header(); ?>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td class="content-field <?php show_district()?>"><?php echo get_post_custom_values('stage_date')[0];?></td>
+			      <td class="content-field <?php show_district()?>"><?php echo get_post_custom_values('stage_date')[0] . '/ ' . get_post_custom_values('stage_date')[1];?></td>
 			    </tr>
 			  </tbody>
 			  <thead>
