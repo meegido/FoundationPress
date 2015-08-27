@@ -14,10 +14,9 @@
 	<article id="post-<?php the_ID(); ?>"  class="full-card">
 		<?php if ( has_post_thumbnail() ) : ?>
 				<div>
-					<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-					<div class="card-image" style="background-image: url('<?php echo $thumb['0'];?>')">
-
-					</div>
+					<a href="<?php the_permalink($post->ID);?>"><?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+						<div class="card-image" style="background-image: url('<?php echo $thumb['0'];?>')"></div>
+					</a>
 				</div>
 			<?php endif; ?>
 		<header>
