@@ -11,7 +11,11 @@
 footer.row {
 	max-width: none;
 	background-color: $black;
-	
+	@media #{$medium-only} {
+		height: 400px;
+		width: 33%;
+
+	}
 	
 }
 
