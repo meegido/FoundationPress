@@ -11,10 +11,10 @@ $( document ).ready(function () {
 		$('#walker-icon').css('color', color);
 	};
 
-	/*$('#hidden-menu-date option').each(function(index, option){
+	$('#hidden-menu-date option').each(function(index, option){
 		console.log(option);
 		$('#menu-date').append(option);
-	});*/
+	});
 });
 
 
