@@ -8,8 +8,6 @@
 	}
 }
 
-
-
 footer.row {
 	max-width: none;
 	background-color: $black;
@@ -89,13 +87,35 @@ footer a {
 .textwidget {
 	h3 {
 		color: $white;
-		font-size: rem-calc(16);
+		font-size: 0.8125rem;
+		margin-top: -3.5em;
+		margin-bottom: 4em;
+		margin-left: 8em;
+	}
+
+	p {
+		font-size: 0.8125rem;
+		margin-left: 0em;
+    margin-bottom: .4em;
 	}
 	img {
-		width: 40%;
-		padding-bottom: .5em;
+		width: 22%;
+		float: left;
+		margin-right: 18px;
 		@media #{$small-only} {
 			display: none;
 		}
 	}
 }
+
+.footer-contact {
+	float: right;
+	padding-right: 123px;
+}
+
+.info-title {
+	margin-left: 6em;
+}
+
+
+
