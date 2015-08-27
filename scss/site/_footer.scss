@@ -91,6 +91,10 @@ footer a {
 		margin-top: -3.5em;
 		margin-bottom: 4em;
 		margin-left: 8em;
+		@media #{$medium-only} {
+		margin-top: -2em;
+		margin-bottom: 2.5em;
+		}
 	}
 
 	p {
@@ -110,7 +114,10 @@ footer a {
 
 .footer-contact {
 	float: right;
-	padding-right: 123px;
+	padding-right: 7.5em;
+	@media #{$medium-only} {
+		padding-right: 2.2em;
+	}
 }
 
 .info-title {
