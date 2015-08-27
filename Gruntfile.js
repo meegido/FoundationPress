@@ -130,35 +130,32 @@ module.exports = function(grunt) {
             livereload:true,
         }
       }
-    }
+    },
 
     wordpressdeploy: {
           options: {
             backup_dir: "backups/",
             rsync_args: ['--verbose', '--progress', '-rlpt', '--compress', '--omit-dir-times', '--delete'],
-            exclusions: ['Gruntfile.js', '.git/', 'tmp/*', 'backups/', 'wp-config.php', 'composer.json', 'composer.lock', 'README.md', '.gitignore', 'package.json', 'node_modules']
+            exclusions: ['Gruntfile.js', '.git/', 'tmp/*', 'backups/', 'composer.json', 'composer.lock', 'README.md', '.gitignore', 'package.json', 'node_modules']
           },
           local: {
             "title": "local",
-            "database": "database_name",
-            "user": "database_username",
-            "pass": "database_password",
-            "host": "database_host",
-            "url": "http://local_url",
-            "path": "/local_path"
+            "database": "wp_cicero",
+            "user": "ciceroorecic",
+            "pass": "Caribu!$",
+            "host": "localhost",
+            "url": "localhost",
+            "path": "/Users/meegido/code/cicero-fundation/"
           },
-          staging: {
-            "title": "staging",
-            "database": "database_name",
-            "user": "database_username",
-            "pass": "database_password",
-            "host": "database_host",
-            "url": "http://staging_url",
-            "path": "/staging_path",
-            "ssh_host": "user@staging_host"
-          },
-          your_environment: {
-            ...
+          production: {
+            "title": "production",
+            "database": "db589167595",
+            "user": "dbo589167595",
+            "pass": "Caribu!$",
+            "host": "db589167595.db.1and1.com",
+            "url": "http://www.ciceromadrid.es",
+            "path": "/kunden/homepages/27/d567369692/htdocs",
+            "ssh_host": "u80217847@ciceromadrid.es"
           }
         }
   });
@@ -173,5 +170,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', ['copy', 'string-replace:fontawesome', 'sass', 'concat', 'uglify']);
   grunt.registerTask('default', ['watch']);
-  grunt.registerTask('default', ['wordpressdeploy']);
+  grunt.registerTask('deploy', ['wordpressdeploy']);
 };

@@ -71,12 +71,12 @@ get_header(); ?>
 			<div class="entry-content-stage">
 				<?php the_content(); ?>
 			</div>
-			<select class="hidden-menu-date" id="hidden-menu-date">
+			<!-- <select class="hidden-menu-date" id="hidden-menu-date">
 				<?php $dates = get_post_custom_values('stage_date');?>
 				<?php foreach ($dates as $date) {
 					echo '<option>'. $date . '</option>';
 				};?>
-			</select>
+			</select> -->
 			<?php do_action( 'foundationpress_post_before_comments' ); ?>
 			<?php comments_template(); ?>
 			<?php do_action( 'foundationpress_post_after_comments' ); ?>
