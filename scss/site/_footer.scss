@@ -4,7 +4,7 @@
 		margin-top: rem-calc(40);
 		padding-top: rem-calc(40);
 		padding-left: rem-calc(60);
-		
+
 	}
 }
 
@@ -14,8 +14,10 @@ footer.row {
 	@media #{$medium-only} {
 		height: 400px;
 		width: 33%;
-
 	}
+	@media #{$small-only} {
+			display: none;
+		}
 	
 }
 
