@@ -136,7 +136,7 @@ module.exports = function(grunt) {
           options: {
             backup_dir: "backups/",
             rsync_args: ['--verbose', '--progress', '-rlpt', '--compress', '--omit-dir-times', '--delete'],
-            exclusions: ['Gruntfile.js', '.git/', 'tmp/*', 'backups/', 'composer.json', 'composer.lock', 'README.md', '.gitignore', 'package.json', 'node_modules']
+            exclusions: ['Gruntfile.js', '.git/', 'tmp/*', 'backups/', 'wp-config.php', 'composer.json', 'composer.lock', 'README.md', '.gitignore', 'package.json', 'node_modules']
           },
           local: {
             "title": "local",
