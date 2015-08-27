@@ -39,6 +39,17 @@
 	}
 	
 }
+.fw-col-xs-12.fw-col-sm-6 {
+	p {
+		@media #{$small-only} {
+    	font-size: .89em;
+  	}
+	}
+}
+
+.fw-container {
+	margin-bottom: 4em;
+}
 
 .route-tag {
 	a {
@@ -165,6 +176,10 @@ button:hover, button:focus, button:hover, button:focus {
 	margin-left: 66px;
 	@media #{$medium-only} {
     margin-left: 16px;
+  }
+  @media #{$small-only} {
+    margin-left: 1em;
+    margin-bottom: 4em;
   }
 
 	&:after {
