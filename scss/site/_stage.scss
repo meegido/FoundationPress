@@ -3,15 +3,25 @@
 	@media #{$medium-only} {
     padding-left: 15px;
   }
+  @media #{$small-only} {
+    padding-left: 15px;
+  }
 }
 
 .reset-table-padding{
 	padding-right: 2em;
 	padding-left: 2em;
+	@media #{$small-only} {
+    padding-right: 0em;
+    padding-left: 0em;
+  }
 } 
 
 .entry-title-stage {
 	font-size: 3.5rem;
+	@media #{$small-only} {
+    font-size: 2em;
+  }
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: -.6rem;
@@ -20,9 +30,14 @@
 .entry-content-stage {
 	p {
 		font-size: rem-calc(16);
+		@media #{$small-only} {
+    	font-size: .89em;
+  	}
 		margin-top: rem-calc(20);
 		clear: both;
+
 	}
+	
 }
 
 .route-tag {
@@ -54,6 +69,10 @@
   margin-left: 50px;
   @media #{$medium-only} {
     margin-left: 0px;
+  }
+  @media #{$small-only} {
+    margin-top: -2.7em;
+    margin-left: 0em;
   }
 }
 
