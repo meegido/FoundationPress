@@ -1,13 +1,22 @@
 .fw-col-xs-12.fw-col-sm-6 {
 	padding-left: 0px;
+	@media #{$portrait} {
+		width: 100%;
+	}
 }
 
 .fw-col-xs-12.fw-col-sm-8 {
 	padding-left: 0px;
+	@media #{$portrait} {
+		width: 100%;
+	}
 }
 
 .fw-col-xs-12.fw-col-sm-9 {
 	padding-left: 0px;
+	@media #{$portrait} {
+		width: 100%;
+	}
 }
 
 .leyend-item {
