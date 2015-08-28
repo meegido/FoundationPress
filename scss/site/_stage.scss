@@ -201,9 +201,7 @@ button:hover, button:focus, button:hover, button:focus {
 	    margin: -10px 0 0 -10px;
 	    transform: rotate(45deg);
 	    @media #{$medium-only} {
-	    	width: 9px;
-	    	height: 9px;
-	    	left: 77px;
+	    	display: none;
   	}
 	}
 
