@@ -12,7 +12,6 @@ footer.row {
 	background-color: $black;
 	@media #{$medium-only} {
 		height: 400px;
-		width: 33%;
 	}
 	@media #{$small-only} {
 			display: none;
