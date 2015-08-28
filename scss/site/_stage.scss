@@ -202,7 +202,10 @@ button:hover, button:focus, button:hover, button:focus {
 	    transform: rotate(45deg);
 	    @media #{$medium-only} {
 	    	display: none;
-  	}
+  		}
+  		@media #{$small-only} {
+	    	display: none;
+  		}
 	}
 
   &.universidad {
