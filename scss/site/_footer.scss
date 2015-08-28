@@ -124,13 +124,17 @@ footer a {
 	@media #{$medium-only} {
 		padding-right: 2.2em;
 	}
+	@media #{$portrait} {
+		padding-right: 0em;
+	}
 }
 
 .info-title {
 	margin-left: 6em;
 	margin-top: -1em;
 	@media #{$portrait} { 
-	 	margin-bottom: 3.5em;
+	 	margin-bottom: 2.5em;
+	 	margin-left: 3em;
 	 }
 }
 
