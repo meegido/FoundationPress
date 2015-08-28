@@ -33,6 +33,9 @@ footer.row {
 		height: 200px;
 		text-align: center;
 	}
+	@media #{$portrait} { 
+	 	height: 300px;
+	}
 
 	h6 {
 		color: $white;
@@ -55,13 +58,13 @@ footer.row {
 		height: 200px;
 		margin-top: -90px;
 	}
+	
 }
 
 #nav_menu-3 {
 	@media #{$small-only} {
 		height: 200px;
 		margin-top: -40px;
-
 	}
 }
 
@@ -126,6 +129,9 @@ footer a {
 .info-title {
 	margin-left: 6em;
 	margin-top: -1em;
+	@media #{$portrait} { 
+	 	margin-bottom: 3.5em;
+	 }
 }
 
 
