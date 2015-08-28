@@ -13,6 +13,10 @@
     margin-left: 33px;
     margin-right: 28px;
   }
+  @media #{$portrait} {
+  	margin-left: -3px;
+  	margin-right: 0px;
+  }
 
 	p {
 		font-size: rem-calc(14);

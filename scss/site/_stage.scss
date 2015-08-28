@@ -15,6 +15,10 @@
     padding-right: 0em;
     padding-left: 0em;
   }
+  @media #{$portrait} {
+  	padding-right: 0em;
+  	padding-left: 0em;
+  }
 } 
 
 .entry-title-stage {
@@ -180,6 +184,9 @@ button:hover, button:focus, button:hover, button:focus {
   @media #{$small-only} {
     margin-left: 1em;
     margin-bottom: 4em;
+  }
+  @media #{$portrait} { 
+  	margin-left: 11px;
   }
 
 	&:after {
