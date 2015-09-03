@@ -3,30 +3,20 @@
 	footer.row {
 		margin-top: rem-calc(40);
 		padding-top: rem-calc(40);
-		padding-left: rem-calc(60);
 	}
 }
 
 footer.row {
 	max-width: none;
 	background-color: $black;
-	@media #{$medium-only} {
-		height: 400px;
-	}
 	@media #{$small-only} {
 			display: none;
 		}
-	
 }
 
 #nav_menu-2, #nav_menu-3, #text-2 {
 	@media #{$large-only} {
 		height: 230px;
-
-	}
-	@media #{$medium-only} {
-		height: 400px;
-		width: 33%;
 
 	}
 	@media #{$small-only} {
@@ -109,9 +99,7 @@ footer a {
     margin-bottom: .4em;
 	}
 	img {
-		width: 22%;
-		float: left;
-		margin-right: 18px;
+		width: 50%;
 		@media #{$small-only} {
 			display: none;
 		}

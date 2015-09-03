@@ -27,7 +27,7 @@
 					<?php $tags = get_the_tags(); 
 						foreach ($tags as $tag) {
 							$permalink = get_post_custom_values('route-link')[0];
-							echo '<a href="'. $permalink .'">'. "#".$tag->name .'</a>';
+							echo '<a href="http://ciceromadrid.es/madrid-vamos-por-partes/">'. "#".$tag->name .'</a>';
 						}
 					 ?>
 				</span>
