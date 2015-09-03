@@ -9,6 +9,17 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
+p {
+	a {
+	color: $aluminum;
+	border-bottom: 1px solid $corporate-main;
+	&:hover {
+		color: $corporate-main;
+			}
+	}
+}
+
+
 .row {
 	max-width: 71.5rem;
 }
