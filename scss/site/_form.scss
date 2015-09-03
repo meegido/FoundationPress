@@ -29,6 +29,10 @@
 		padding-right: .2rem;
 }
 
+input.wpcf7-form-control.wpcf7-text.wpcf7-tel.wpcf7-validates-as-required.wpcf7-validates-as-tel {
+	border-radius: 5px;
+}
+
 input.wpcf7-form-control.wpcf7-submit.button.expand.send-button {
 	letter-spacing: 0.0825em;
 	box-shadow: 0 3px #2c3e50;
@@ -72,15 +76,23 @@ input.wpcf7-form-control.wpcf7-submit.button.expand.send-button-contact {
 }
 
 input.wpcf7-form-control.wpcf7-text.border-form-contact {
-	border-radius: 9px;
+	border-radius: 5px;
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+	border-radius: 5px;
+}
+
+select.wpcf7-form-control.wpcf7-select.group-number {
+	border-radius: 5px;
 }
 
 input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-email.borders-form-contact {
-	border-radius: 9px;
+	border-radius: 5px;
 }
 
 textarea.wpcf7-form-control.wpcf7-textarea.borders-form-contact {
-	border-radius: 9px;
+	border-radius: 5px;
 
 }
 
