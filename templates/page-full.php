@@ -10,7 +10,19 @@ get_header(); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<?php if ( has_post_thumbnail() ) : ?>
+					<?php
+					$thumb_id = get_post_thumbnail_id();
+					$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+					$thumb_url = $thumb_url_array[0];
+					?>
+
+					<div class="row">
+						<div class="featured-image" style="background-image: url('<?php echo $thumb_url ?>')" >
+						</div>
+					</div>
+					<h1 class="entry-title"><?php the_title(); ?></h1>
+				<?php endif; ?>
 			</header>
 			<div class="entry-content">
 				<?php the_content(); ?>
