@@ -50,8 +50,8 @@
 	background: $ghost;
 	&:hover	{
 				background-color: $ghost;
-				color: $black;
-				border-bottom: 2px solid $black;
+				color: $corporate-main;
+				border-bottom: 2px solid $corporate-main;
 				padding-bottom: 0px;
 			}
 }
@@ -66,7 +66,7 @@
 	&:hover {
 		background-color: $ghost;
 		color: $black;
-		border-bottom: 2px solid $black;
+		border-bottom: 2px solid $corporate-main;
 		padding-bottom: 0px;
 	}
 			
@@ -76,14 +76,14 @@
 	li.active:not(.has-form) {
 		background-color: $ghost;
 		color: $black;
-		border-bottom: 2px solid $black;
+		border-bottom: 2px solid $corporate-main;
 		padding-bottom: 0px;
 	}
 
   a:hover:not(.button) {
 		background-color: $ghost;
 		color: $black;
-		border-bottom: 2px solid $black;
+		border-bottom: 2px solid $corporate-main;
 		padding-bottom: 0px;
 	}
 }
@@ -99,7 +99,7 @@
 		box-shadow: 0 0 0 1px $black,0 7px 0 1px $black,0 14px 0 1px $black;
 		margin-top: -.2rem;
 		width: 1.4rem;
-		border: 1px solid $black;
+		border: 1px solid $corporate-main;
 	}
 }
 
