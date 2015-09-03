@@ -59,10 +59,15 @@
 		font-size: rem-calc(14);
 }
 
+article#text-4 {
+	@media #{$medium-only} {
+		margin-left: -51px;
+	}
+}
+
 #text-4 {
 	h6 {
 		margin-left: rem-calc(60);
-		margin-top: rem-calc(60);
 		font-weight: 800;
 
 		@media #{$small-only} {
