@@ -19,6 +19,10 @@
 	}
 }
 
+.fw-container {
+	padding-left: 6px;
+}
+
 .leyend-item {
 		margin-left: rem-calc(60);
 		@media #{$small-only} {
@@ -38,6 +42,11 @@
 
 h1.entry-title {
 		text-transform: uppercase;
+		
+}
+
+.entry-content {
+
 }
 
 .content {
