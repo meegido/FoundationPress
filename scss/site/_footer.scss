@@ -8,13 +8,13 @@
 
 footer.row {
 	max-width: none;
-	background-color: $black;
+	background-color: $corporate;
 	@media #{$small-only} {
 			display: none;
 		}
 }
 
-#nav_menu-2, #nav_menu-3, #text-2 {
+#nav_menu-2, #nav_menu-3, #text-2, #text-5 {
 	@media #{$large-only} {
 		height: 230px;
 
@@ -28,13 +28,13 @@ footer.row {
 	}
 
 	h6 {
-		color: $white;
+		color: $black;
 		text-transform: uppercase;
 		font-size: rem-calc(18);
 		font-weight: 800;
 
 		@media #{$small-only} {
-		background-color: $white;
+		background-color: $black;
 		color: $black;
 		font-weight: 300;
 		box-shadow: 0 5px $aluminum;
@@ -68,11 +68,11 @@ footer li {
 }
 
 footer a {
-	color: $white;
+	color: $black;
 	font-size: rem-calc(13);
 	&:hover {
-		color: $white;
-		border-bottom: 1px solid $white;
+		color: $black;
+		border-bottom: 1px solid $black;
 	}
 	@media #{$small-only} {
 		font-size: rem-calc(16);
@@ -82,7 +82,7 @@ footer a {
 
 .textwidget {
 	h3 {
-		color: $white;
+		color: $black;
 		font-size: 0.8125rem;
 		margin-top: -3.5em;
 		margin-bottom: 4em;
