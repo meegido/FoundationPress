@@ -115,6 +115,7 @@
 }
 
 .no-padding {
+	padding-left: 2px;
 	@media #{$medium-only} {
     padding-left: 15px ;
     padding-right: 15px;
