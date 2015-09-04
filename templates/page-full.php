@@ -16,10 +16,7 @@ get_header(); ?>
 					$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
 					$thumb_url = $thumb_url_array[0];
 					?>
-
-					<div class="row">
-						<div class="featured-image" style="background-image: url('<?php echo $thumb_url ?>')" >
-						</div>
+					<div class="featured-image" style="background-image: url('<?php echo $thumb_url ?>')" >
 					</div>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 				<?php endif; ?>
