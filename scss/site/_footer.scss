@@ -9,9 +9,6 @@
 footer.row {
 	max-width: none;
 	background-color: $corporate;
-	@media #{$small-only} {
-			display: none;
-		}
 }
 
 #nav_menu-2, #nav_menu-3, #text-2, #text-5 {
@@ -34,10 +31,10 @@ footer.row {
 		font-weight: 800;
 
 		@media #{$small-only} {
-		background-color: $black;
 		color: $black;
-		font-weight: 300;
-		box-shadow: 0 5px $aluminum;
+		font-weight: 600;
+		font-size: 1em;
+		box-shadow: 0 1px $black;
 	}
 
 	}
@@ -46,7 +43,7 @@ footer.row {
 #nav_menu-2 {
 	@media #{$small-only} {
 		height: 200px;
-		margin-top: -90px;
+		margin-top: -26px;
 	}
 	
 }
@@ -75,7 +72,7 @@ footer a {
 		border-bottom: 1px solid $black;
 	}
 	@media #{$small-only} {
-		font-size: rem-calc(16);
+		font-size: rem-calc(13);
 
 	}
 }
@@ -83,6 +80,10 @@ footer a {
 .facebook {
 	width: 35%;
 	margin-left: -7px;
+	@media #{$small-only} {
+		display: inline-block;
+
+	}
 }
 
 
@@ -106,9 +107,13 @@ footer a {
 	}
 	img {
 		width: 50%;
-		@media #{$small-only} {
-			display: none;
-		}
+		
+	}
+}
+
+#text-5 {
+	@media #{$small-only} {
+		display: none;
 	}
 }
 

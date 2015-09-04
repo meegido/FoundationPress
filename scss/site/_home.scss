@@ -64,7 +64,7 @@
 	position: relative;
 	background-color: white;
 	@media #{$small-only} {
-    height: 30em;
+    height: auto;
   }
 
 }
