@@ -19,7 +19,7 @@ get_header(); ?>
     </header>
     </div>
     
-    <div class="small-12 medium-8 large-8 columns no-padding" role="main">
+    <div class="small-12 medium-8 large-8 columns" role="main">
 
         <?php do_action( 'foundationpress_before_content' ); ?>
 
