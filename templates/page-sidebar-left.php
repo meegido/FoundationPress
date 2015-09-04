@@ -4,7 +4,8 @@ Template Name: Left Sidebar
 */
 get_header(); ?>
 <div class="row">
-    <header>
+    <div class="small-12 large-12 columns" role="main">
+        <header>
         <?php if ( has_post_thumbnail() ) : ?>
             <?php
             $thumb_id = get_post_thumbnail_id();
@@ -19,6 +20,8 @@ get_header(); ?>
             <h1 class="entry-title"><?php the_title(); ?></h1>
         <?php endif; ?>
     </header>
+    </div>
+    
     <div class="small-12 medium-8 large-8 columns no-padding" role="main">
 
         <?php do_action( 'foundationpress_before_content' ); ?>
