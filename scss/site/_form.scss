@@ -44,7 +44,7 @@ input.wpcf7-form-control.wpcf7-submit.button.expand.send-button {
 
 	&:hover {
 		background-color: $corporate-main;
-		color: white;
+		color: $black;
 	}
 
 }
@@ -57,22 +57,22 @@ input.wpcf7-form-control.wpcf7-submit.button.expand.send-button-contact {
 	width: 100%;
 
 	&:hover {
-		background-color: #FEEE00;
+		background-color: $corporate-main;
 		color: $black;
 	}
 
 	&:active {
-		background-color: #FEEE00;
+		background-color: $corporate-main;
 		color: $black;
 	}
 
 	&:focus {
-		background-color: #FEEE00;
+		background-color: $corporate-main;
 		color: $black;
 	}
 
 	&:visited {
-		background-color: #FEEE00;
+		background-color: $corporate-main;
 		color: $black;
 	}
 
