@@ -35,14 +35,15 @@ input.wpcf7-form-control.wpcf7-text.wpcf7-tel.wpcf7-validates-as-required.wpcf7-
 	border-radius: 5px;
 }
 
+
 input.wpcf7-form-control.wpcf7-submit.button.expand.send-button {
 	letter-spacing: 0.0825em;
-	box-shadow: 0 3px #2c3e50;
-	background-color: $black;
+	box-shadow: 0 3px $black;
+	background-color: $aluminum;
 	border-radius: 5px;
 
 	&:hover {
-		background-color: $aluminum;
+		background-color: $corporate-main;
 		color: white;
 	}
 
